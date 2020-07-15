@@ -1,0 +1,576 @@
+/* Downloaded Google Fonts */
+
+@font-face {
+    font-family: "mallanna";
+    src: url("../assets/fonts/mallanna-regular-webfont.woff2") format("woff2"), url("../assets/fonts/mallanna-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../assets/fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* General Settings */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    font-family: "mallanna";
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 500vh;
+    width: 100%;
+    font-size: 16px;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(71, 45, 48, 1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(226, 109, 92, 1.0);
+}
+
+
+/* Side Navbar by CodeNepal Modified CSS */
+
+.sidebar {
+    position: fixed;
+    width: 220px;
+    left: -220px;
+    height: 100vh;
+    background: rgba(255, 225, 168, 1.0);
+    transition: all .5s ease;
+    z-index: 10;
+}
+
+.sidebar header {
+    font-size: 28px;
+    color: rgba(226, 109, 92, 1.0);
+    line-height: 70px;
+    text-align: center;
+    background: rgba(71, 45, 48, 1);
+    user-select: none;
+    font-family: "montserrat";
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
+}
+
+.sidebar img {
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+    margin-top: 10px;
+    fill: white;
+}
+
+.sidebar a {
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-top: 2px solid rgba(255, 255, 255, .1);
+    border-left: 5px solid transparent;
+    font-family: 'Mallanna', sans-serif;
+    transition: all .5s ease;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px grey;
+}
+
+.sidebar a:hover {
+    border-left: 5px solid rgba(226, 109, 92, 1.0);
+    color: rgba(226, 109, 92, 1.0);
+    box-shadow: 0 0 10px rgba(226, 109, 92, 1.0), 0 0 40px rgba(226, 109, 92, 1.0), 0 0 80px rgba(226, 109, 92, 1.0);
+}
+
+.sidebar a span {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: fixed;
+    cursor: pointer;
+    fill: white;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    font-size: 29px;
+    background: rgba(255, 225, 168, 1.0);
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+}
+
+label #cancel {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked~label #cancel {
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* End of Side Navbar */
+
+
+/* Page 1 Custom CSS */
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(71, 45, 48, 0.5);
+}
+
+
+/* Background Video for Page 1 */
+
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -5;
+    transform: translate(-60%, -50%);
+    overflow: hidden;
+    /* opacity: 0.6; */
+}
+
+
+/* Page1 top for Main Titles */
+
+.page1-top {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.main-title {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.main-title h1 {
+    color: rgba(255, 225, 168, 1.0);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
+    padding: 2rem 2rem 1rem 2rem;
+    font-family: "monsterrat";
+    line-height: 1.5;
+}
+
+
+/* Subtitles and Lines CSS */
+
+.sub-title {
+    height: 40%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.sub-title h2 {
+    color: rgba(226, 109, 92, 1.0);
+    font-size: 1.75rem;
+    font-family: "mallanna";
+    letter-spacing: 0.2rem;
+    padding: 3rem 2rem;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
+}
+
+.cta-1-btn {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #031321; */
+    font-family: "montserrat";
+}
+
+.cta-1-btn a {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: rgb(255, 225, 168);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: rgba(114, 61, 70, 1);
+    box-shadow: 5px 10px 8px black;
+}
+
+.cta-1-btn a:hover {
+    color: white;
+    background-color: rgba(226, 109, 92, 1.0);
+    box-shadow: 0 0 10px rgba(226, 109, 92, 1.0), 0 0 40px rgba(226, 109, 92, 1.0), 0 0 80px rgba(226, 109, 92, 1.0);
+    transition-delay: 1s;
+}
+
+.cta-1-btn a span {
+    position: absolute;
+    display: block;
+}
+
+.cta-1-btn a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+}
+
+.cta-1-btn a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+.cta-1-btn a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(226, 109, 92, 1.0));
+}
+
+.cta-1-btn a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.cta-1-btn a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+}
+
+.cta-1-btn a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.cta-1-btn a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(226, 109, 92, 1.0));
+}
+
+.cta-1-btn a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/* .sub-title:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: transparent;
+    position: absolute;
+    left: 30px;
+    top: 35%;
+    overflow: hidden;
+    z-index: -1;
+    border-top: solid 4px rgba(255, 225, 168, 1.0);
+    border-bottom: solid 2px rgba(255, 225, 168, 1.0);
+}
+
+.sub-title::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: transparent;
+    position: absolute;
+    right: 30px;
+    top: 35%;
+    overflow: hidden;
+    z-index: -1;
+    border-top: solid 4px rgba(255, 225, 168, 1.0);
+    border-bottom: solid 2px rgba(255, 225, 168, 1.0);
+} */
+
+
+/* Page 1 Btm - Call to Action */
+
+.page1-btm {
+    height: 30%;
+    width: 100%;
+    background-color: rgba(71, 45, 48, 0.8);
+    border-top-right-radius: 60px;
+    border-top: 0.5rem ridge rgba(226, 109, 92, 1.0);
+    border-bottom-left-radius: 60px;
+    border-bottom: 0.5rem ridge rgba(226, 109, 92, 1.0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem 0;
+    box-shadow: 5px 10px 8px black;
+}
+
+.page1-textbox {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+}
+
+.page1-textbox p {
+    color: rgba(255, 225, 168, 1.0);
+    font-family: "mallanna";
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.page1-textbox-1 {
+    height: auto;
+    width: 70%;
+    padding: 2.5rem 0 0 0;
+    border-bottom: 6px double rgba(226, 109, 92, 1.0);
+}
+
+.page1-textbox-2 {
+    height: auto;
+    width: 60%;
+    padding: 0 0 2.5rem 9rem;
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: darkolivegreen;
+}
+
+.page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+.page4 {
+    height: 100vh;
+    width: 100%;
+    background-color: darkolivegreen;
+}
+
+.page5 {
+    height: 100vh;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+
+/* Media Queries */
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .main-title h1 {
+        padding: 1rem 2rem;
+    }
+    .sub-title {
+        align-items: flex-end;
+    }
+    /* .sub-title:before {
+        top: 42%;
+        left: 20%;
+        width: 60px;
+    }
+    
+    .sub-title:after {
+        top: 42%;
+        right: 20%;
+        width: 60px;
+    } */
+}
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media only screen and (min-width: 768px) {
+    /* Side Navbar CSS by CodeNepal Modified */
+    .sidebar {
+        height: auto;
+        width: 80px;
+        left: 0;
+        margin: 200px 0;
+        z-index: 5;
+    }
+    header,
+    #btn,
+    #cancel {
+        display: none;
+    }
+    .sidebar span {
+        position: absolute;
+        margin-left: 1.25rem;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        justify-content: center;
+    }
+    .sidebar a {
+        height: 60px;
+    }
+    .sidebar a img {
+        margin-left: -10px;
+    }
+    .sidebar a:hover {
+        width: 200px;
+        background: inherit;
+    }
+    .sidebar a:hover span {
+        opacity: 1;
+        visibility: visible;
+    }
+    /* End of Side Navbar CSS */
+    .main-title h1 {
+        font-size: 3.5rem;
+        padding: 2rem 4rem;
+    }
+    .sub-title {
+        align-items: flex-start;
+    }
+    .sub-title h2 {
+        font-size: 2.5rem;
+        padding: 3rem 2rem;
+    }
+    .page1-textbox p {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .page1-textbox-1 {
+        padding: 3rem 0;
+        width: 100%;
+    }
+    .page1-textbox-2 {
+        padding: 3rem 0;
+        width: 100%;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .main-title h1 {
+        width: 50%;
+    }
+    .page1-textbox p {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .page1-textbox-1 {
+        width: 100%;
+        padding: 4rem 4rem 5rem 0rem;
+    }
+    .page1-textbox-2 {
+        width: 100%;
+        padding: 2rem 2rem 4rem 0rem;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /* Resize Background Video */
+    #bg-video {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    .main-title h1 {
+        width: 50%;
+    }
+    .page1-textbox p {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .page1-textbox-1 {
+        width: 100%;
+        padding: 2rem 2rem 2.5rem 2rem;
+    }
+    .page1-textbox-2 {
+        width: 100%;
+        padding: 2rem;
+    }
+}
