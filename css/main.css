@@ -432,25 +432,76 @@
     }
     
     .page3-divider {
-        height: 1.5rem;
+        height: 0.3rem;
         width: auto;
         background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
-        margin: 1rem 2rem;
+        margin: 2rem 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
-    .page3-divider a {
-        font-family: "montserrat";
-        font-weight: 900;
-        color: (255, 225, 168, 1);
-        letter-spacing: .5rem;
-    }
-    
     .page3-title {
         height: auto;
         width: 100%;
+    }
+    
+    .page3-top {
+        height: 35%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../assets/images/group2.jpeg);
+        background-repeat: none;
+        background-size: cover;
+        margin-top: 2rem;
+    }
+    
+    .page3-btm {
+        height: 35%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../assets/images/housecall1-fixed.jpeg);
+        background-repeat: none;
+        background-size: cover;
+    }
+    
+    .accordion {
+        background-color: rgba(71, 45, 48, 1);
+        color: rgba(255, 225, 168, 1);
+        font-family: "monserrat";
+        font-size: 1rem;
+        font-weight: 900;
+        line-height: 1.5rem;
+        cursor: pointer;
+        padding: 1rem;
+        width: auto;
+        height: 10rem;
+        text-align: center;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        border: 2px solid black;
+        text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey;
+    }
+    
+    .accordion:active,
+    .accordion:hover {
+        background-color: rgba(226, 109, 92, 1.0);
+        color: rgba(71, 45, 48, 1);
+    }
+    
+    .panel {
+        padding: 0 1rem;
+        background-color: rgba(255, 225, 168, 1);
+        color: rgba(71, 45, 48, 1);
+        font-family: "mallanna";
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
     }
     
     .page3-title h2 {
@@ -463,44 +514,6 @@
         text-align: center;
         text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
         border-bottom: 4px double rgba(226, 109, 92, 1.0);
-    }
-    
-    .page3-atm h3 {
-        font-family: "montserrat";
-        font-size: 1rem;
-        font-weight: 900;
-        color: rgba(226, 109, 92, 1.0);
-        letter-spacing: 0.2rem;
-        padding: 0.2rem 2rem 0rem 2rem;
-        text-align: center;
-        line-height: 1.5rem;
-    }
-    
-    .page3-atm p {
-        font-family: "mallanna";
-        font-size: 1rem;
-        font-weight: 400;
-        color: rgba(255, 225, 168, 1);
-        padding: 0.5rem 2rem;
-    }
-    
-    .page3-fi h3 {
-        font-family: "montserrat";
-        font-size: 1rem;
-        font-weight: 900;
-        color: rgba(226, 109, 92, 1.0);
-        letter-spacing: 0.2rem;
-        padding: 0.2rem 2rem;
-        text-align: center;
-        line-height: 1.5rem;
-    }
-    
-    .page3-fi p {
-        font-family: "mallanna";
-        font-size: 1rem;
-        font-weight: 400;
-        color: rgba(255, 225, 168, 1);
-        padding: 0.5rem 2rem;
     }
     
     .page4 {
@@ -665,9 +678,24 @@
         .page3 {
             width: 50%;
             height: 100vh;
+            padding: 0rem 3rem;
         }
         .lg-screen-row {
             display: flex;
             flex-direction: row;
+        }
+        .page3-title {
+            padding: 2rem 0rem;
+        }
+        .page3-title h2 {
+            font-size: 3.5rem;
+        }
+        .accordion {
+            width: 15rem;
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+        .panel {
+            font-size: 1.3rem;
         }
     }
