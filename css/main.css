@@ -33,6 +33,7 @@
         font-size: 16px;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
     /* End of General Settings */
     /* Scrollbar CSS */
@@ -378,26 +379,27 @@
     .page2 {
         height: 100vh;
         width: 100%;
-        background-color: rgba(71, 45, 48, 1);
+        background-color: rgba(201, 203, 163, 1);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
-    .page2-top {
-        height: 50%;
+    .page2-wrapper {
+        height: 100%;
         width: 100%;
         padding: 0;
         margin: 0;
-        background-image: url(../assets/images/220px-Moshe_Feldenkrais.png);
+        background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url(../assets/images/220px-Moshe_Feldenkrais.png);
         background-repeat: none;
         background-size: cover;
+        background-position: center;
     }
     
-    .page2-top h2 {
-        background-color: rgba(71, 45, 48, 0.8);
-        color: rgba(255, 225, 168, 1.0);
+    .page2-wrapper h2 {
+        background-color: rgba(201, 203, 163, 0.8);
+        color: rgba(71, 45, 48, 1);
         font-family: "montserrat";
         letter-spacing: 0.25rem;
         font-size: 1.5rem;
@@ -405,27 +407,100 @@
         padding: 1rem 2rem;
         text-align: center;
         line-height: 2rem;
+        font-weight: 900;
+        text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey, 3px 3px 3px grey, 4px 4px 4px grey;
+        border-bottom: 0.5rem double rgba(71, 45, 48, 1);
     }
     
-    .page2-top p {
-        background-color: rgba(71, 45, 48, 0.8);
-        color: rgba(255, 225, 168, 1.0);
+    .page2-wrapper p {
+        background-color: rgba(201, 203, 163, 0.8);
+        color: rgba(71, 45, 48, 1);
         font-family: "mallanna";
         letter-spacing: 0.1rem;
         font-size: 1rem;
         padding: 1rem 2rem;
         text-align: left;
+        font-weight: bold;
     }
-    
-    .page2-btm {
-        height: 50%;
-        width: 100%;
-    }
+    /* End of Page 2 Custom CSS */
+    /* Page 3 Custom CSS */
     
     .page3 {
         height: 100vh;
         width: 100%;
-        background-color: darkslategray;
+        background-color: rgba(71, 45, 48, 1);
+    }
+    
+    .page3-divider {
+        height: 1.5rem;
+        width: auto;
+        background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+        margin: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .page3-divider a {
+        font-family: "montserrat";
+        font-weight: 900;
+        color: (255, 225, 168, 1);
+        letter-spacing: .5rem;
+    }
+    
+    .page3-title {
+        height: auto;
+        width: 100%;
+    }
+    
+    .page3-title h2 {
+        font-family: "montserrat";
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: rgba(226, 109, 92, 1.0);
+        letter-spacing: 0.2rem;
+        padding: 1rem 2rem;
+        text-align: center;
+        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
+        border-bottom: 4px double rgba(226, 109, 92, 1.0);
+    }
+    
+    .page3-atm h3 {
+        font-family: "montserrat";
+        font-size: 1rem;
+        font-weight: 900;
+        color: rgba(226, 109, 92, 1.0);
+        letter-spacing: 0.2rem;
+        padding: 0.2rem 2rem 0rem 2rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    
+    .page3-atm p {
+        font-family: "mallanna";
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 225, 168, 1);
+        padding: 0.5rem 2rem;
+    }
+    
+    .page3-fi h3 {
+        font-family: "montserrat";
+        font-size: 1rem;
+        font-weight: 900;
+        color: rgba(226, 109, 92, 1.0);
+        letter-spacing: 0.2rem;
+        padding: 0.2rem 2rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    
+    .page3-fi p {
+        font-family: "mallanna";
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 225, 168, 1);
+        padding: 0.5rem 2rem;
     }
     
     .page4 {
@@ -550,6 +625,9 @@
     
     @media only screen and (min-width: 1200px) {
         /* Resize Background Video */
+        body {
+            flex-direction: column;
+        }
         #bg-video {
             top: 0;
             left: 0;
@@ -569,5 +647,27 @@
         .page1-textbox-2 {
             width: 100%;
             padding: 2rem;
+        }
+        .page2 {
+            width: 50%;
+            height: 100vh;
+        }
+        .page2-wrapper h2 {
+            margin: 26rem 0 0 0;
+            padding: 3rem 10rem;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        .page2-wrapper p {
+            font-size: 1.25rem;
+            padding: 1rem 5rem;
+        }
+        .page3 {
+            width: 50%;
+            height: 100vh;
+        }
+        .lg-screen-row {
+            display: flex;
+            flex-direction: row;
         }
     }
