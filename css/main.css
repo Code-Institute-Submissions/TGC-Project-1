@@ -54,20 +54,20 @@
     
     .sidebar {
         position: fixed;
-        width: 220px;
-        left: -220px;
+        width: 180px;
+        left: -180px;
         height: 100vh;
-        background: rgba(255, 225, 168, 1.0);
+        background: rgba(151, 132, 122, 1);
         transition: all .5s ease;
         z-index: 10;
     }
     
     .sidebar header {
         font-size: 28px;
-        color: rgba(226, 109, 92, 1.0);
+        color: rgba(166, 161, 158, 1);
         line-height: 70px;
         text-align: center;
-        background: rgba(71, 45, 48, 1);
+        background: rgba(94, 79, 72, 1);
         user-select: none;
         font-family: "montserrat";
         font-weight: 900;
@@ -75,28 +75,28 @@
     }
     
     .sidebar img {
-        height: 40px;
-        width: 40px;
-        margin-right: 16px;
-        margin-top: 10px;
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        margin-top: 15px;
         fill: white;
     }
     
     .sidebar a {
         display: block;
-        height: 65px;
+        height: 75px;
         width: 100%;
         color: black;
         font-weight: bold;
-        line-height: 65px;
-        padding-left: 30px;
+        line-height: 75px;
+        padding-left: 20px;
         box-sizing: border-box;
         border-bottom: 2px solid black;
-        border-top: 2px solid rgba(255, 255, 255, .1);
+        border-top: 2px solid rgba(255, 255, 255, .3);
         border-left: 5px solid transparent;
         font-family: 'Mallanna', sans-serif;
         transition: all .5s ease;
-        text-shadow: 1px 1px 1px black, 1px 2px 1px grey;
+        /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey; */
     }
     
     .sidebar a:hover {
@@ -131,6 +131,7 @@
         bottom: 0;
         left: 0;
         margin: 20px;
+        z-index: 10;
     }
     
     label #cancel {
@@ -380,24 +381,30 @@
         height: 100vh;
         width: 100%;
         background-color: rgba(201, 203, 163, 1);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        position: relative;
     }
     
-    .page2-wrapper {
-        height: 100%;
-        width: 100%;
+    .page2-image {
+        height: 90%;
+        width: 90%;
         padding: 0;
         margin: 0;
         background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url(../assets/images/220px-Moshe_Feldenkrais.png);
         background-repeat: none;
         background-size: cover;
         background-position: center;
+        transform: translate(5%, 5%);
     }
     
-    .page2-wrapper h2 {
+    .page2-text {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 5%;
+    }
+    
+    .page2-text h2 {
         background-color: rgba(201, 203, 163, 0.8);
         color: rgba(71, 45, 48, 1);
         font-family: "montserrat";
@@ -412,7 +419,7 @@
         border-bottom: 0.5rem double rgba(71, 45, 48, 1);
     }
     
-    .page2-wrapper p {
+    .page2-text p {
         background-color: rgba(201, 203, 163, 0.8);
         color: rgba(71, 45, 48, 1);
         font-family: "mallanna";
@@ -421,6 +428,7 @@
         padding: 1rem 2rem;
         text-align: left;
         font-weight: bold;
+        line-height: 1.5rem;
     }
     /* End of Page 2 Custom CSS */
     /* Page 3 Custom CSS */
@@ -429,25 +437,35 @@
         height: 100vh;
         width: 100%;
         background-color: rgba(71, 45, 48, 1);
-    }
-    
-    .page3-divider {
-        height: 0.3rem;
-        width: auto;
-        background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
-        margin: 2rem 2rem;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
     }
     
     .page3-title {
-        height: auto;
+        height: 10%;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .page3-title h2 {
+        font-family: "montserrat";
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: rgba(226, 109, 92, 1.0);
+        letter-spacing: 0.2rem;
+        padding: 1rem 2rem;
+        text-align: center;
+        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
+        border-bottom: 4px double rgba(226, 109, 92, 1.0);
+    }
+    
+    .page3-lg-wrapper {
+        height: 100%;
         width: 100%;
     }
     
     .page3-top {
-        height: 35%;
+        height: 40%;
         width: auto;
         display: flex;
         justify-content: center;
@@ -455,11 +473,20 @@
         background-image: url(../assets/images/group2.jpeg);
         background-repeat: none;
         background-size: cover;
-        margin-top: 2rem;
+    }
+    
+    .page3-divider {
+        height: 0.5rem;
+        width: auto;
+        background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+        margin: 1.5rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .page3-btm {
-        height: 35%;
+        height: 40%;
         width: auto;
         display: flex;
         justify-content: center;
@@ -468,6 +495,7 @@
         background-repeat: none;
         background-size: cover;
     }
+    /* Course Information Accordion */
     
     .accordion {
         background-color: rgba(71, 45, 48, 1);
@@ -478,14 +506,15 @@
         line-height: 1.5rem;
         cursor: pointer;
         padding: 1rem;
-        width: auto;
+        width: 10rem;
         height: 10rem;
         text-align: center;
         border: none;
         outline: none;
         transition: 0.4s;
         border: 2px solid black;
-        text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey;
+        /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey; */
+        margin: 0rem 0.5rem;
     }
     
     .accordion:active,
@@ -504,22 +533,109 @@
         transition: max-height 0.2s ease-out;
     }
     
-    .page3-title h2 {
-        font-family: "montserrat";
-        font-size: 1.5rem;
-        font-weight: 900;
-        color: rgba(226, 109, 92, 1.0);
-        letter-spacing: 0.2rem;
-        padding: 1rem 2rem;
-        text-align: center;
-        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
-        border-bottom: 4px double rgba(226, 109, 92, 1.0);
+    .accordion:after {
+        content: '\2b9e';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 2rem;
+        color: #777;
+        float: right;
+        margin-left: 5px;
     }
+    
+    .accordion.active:after {
+        content: "\2b9c";
+        /* Unicode character for "minus" sign (-) */
+    }
+    /* End of Accordion */
+    /* End of Page 3 Custom CSS */
+    /* Page 4 Custom CSS */
     
     .page4 {
         height: 100vh;
         width: 100%;
-        background-color: darkolivegreen;
+        background-color: rgba(201, 203, 163, 1);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .page4-portrait-wrapper {
+        height: 25%;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .page4-portrait {
+        height: 150px;
+        width: 150px;
+        background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url(../assets/images/trainer.jpg);
+        background-repeat: none;
+        background-size: contain;
+        border-radius: 80px;
+    }
+    /* .page4-writeup-title {
+        height: 10%;
+        width: auto;
+    }
+    
+    .page4-writeup-title p {
+        font-family: "montserrat";
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-align: center;
+        padding: 1rem 2rem;
+        color: rgba(226, 109, 92, 1.0);
+        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
+        border-bottom: 4px double rgba(226, 109, 92, 1.0);
+    } */
+    
+    .page4-writeup {
+        height: 30%;
+        width: auto;
+        padding: 0 2rem;
+        text-align: center;
+    }
+    
+    #acc-writeup {
+        background-color: transparent;
+        color: rgba(226, 109, 92, 1.0);
+        font-family: "monserrat";
+        font-size: 1.25rem;
+        width: 90%;
+        height: 2rem;
+        text-align: center;
+        border: none;
+        padding: 0;
+        margin: 1rem 0;
+        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
+    }
+    
+    #acc-writeup::after {
+        content: '\02795';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: top right;
+        margin: 0px 0px 20px 0px;
+    }
+    
+    #acc-writeup:active:after {
+        content: "\2796";
+        /* Unicode character for "minus" sign (-) */
+    }
+    
+    #panel-writeup {
+        z-index: 2;
+        background-color: rgba(71, 45, 48, 1);
+        color: rgba(255, 225, 168, 1);
+    }
+    
+    .page4-slideshow {
+        height: 30%;
+        width: 100%;
+        /* background-color: orange; */
     }
     
     .page5 {
@@ -555,7 +671,7 @@
         /* Side Navbar CSS by CodeNepal Modified */
         .sidebar {
             height: auto;
-            width: 80px;
+            width: 4.5rem;
             left: 0;
             margin: 200px 0;
             z-index: 5;
@@ -567,7 +683,7 @@
         }
         .sidebar span {
             position: absolute;
-            margin-left: 1.25rem;
+            margin-left: 2rem;
             opacity: 0;
             visibility: hidden;
             text-align: center;
@@ -575,12 +691,10 @@
         }
         .sidebar a {
             height: 60px;
-        }
-        .sidebar a img {
-            margin-left: -10px;
+            padding: 0 0 0 1rem;
         }
         .sidebar a:hover {
-            width: 200px;
+            width: 12rem;
             background: inherit;
         }
         .sidebar a:hover span {
@@ -662,40 +776,89 @@
             padding: 2rem;
         }
         .page2 {
-            width: 50%;
+            width: 100%;
             height: 100vh;
-        }
-        .page2-wrapper h2 {
-            margin: 26rem 0 0 0;
-            padding: 3rem 10rem;
-            font-size: 2rem;
-            line-height: 3rem;
-        }
-        .page2-wrapper p {
-            font-size: 1.25rem;
-            padding: 1rem 5rem;
-        }
-        .page3 {
-            width: 50%;
-            height: 100vh;
-            padding: 0rem 3rem;
-        }
-        .lg-screen-row {
             display: flex;
             flex-direction: row;
         }
+        .page2-image {
+            width: 50%;
+            height: 93%;
+            position: static;
+            transform: none;
+            margin: 2rem;
+        }
+        .page2-text {
+            width: 50%;
+            height: 100%;
+            position: static;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .page2-text h2 {
+            padding: 2rem 1rem;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin: 2rem 2rem 4rem;
+        }
+        .page2-text p {
+            font-size: 1.75rem;
+            padding: 1rem 5rem;
+            letter-spacing: 0.25rem;
+            line-height: 2rem;
+        }
+        .page3 {
+            width: 100%;
+            height: 100vh;
+        }
+        .page3-lg-wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70%;
+            margin: 2rem 0;
+        }
         .page3-title {
-            padding: 2rem 0rem;
+            height: 20%;
         }
         .page3-title h2 {
-            font-size: 3.5rem;
+            font-size: 4rem;
+            padding: 3rem 0;
+            margin: 2rem 0;
+        }
+        .page3-top {
+            width: 49%;
+            height: 100%;
+            margin: 0 2rem;
+            background-position: center;
+        }
+        .page3-btm {
+            width: 49%;
+            height: 100%;
+            margin: 0rem 2rem;
+            background-position: center;
+        }
+        .page3-divider {
+            width: 1rem;
+            height: 80%;
         }
         .accordion {
-            width: 15rem;
-            font-size: 1.2rem;
-            line-height: 2rem;
+            width: 20rem;
+            height: 15rem;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            margin: 20rem 0 0 0;
         }
         .panel {
             font-size: 1.3rem;
+        }
+        .accordion:after {
+            font-size: 2.5rem;
+            color: green;
+        }
+        .accordion.active:after {
+            color: red;
         }
     }

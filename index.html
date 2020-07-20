@@ -20,7 +20,7 @@
         <img src="assets/images/times-solid.svg" alt="menu-close" id="cancel"></i>
     </label>
     <nav class="sidebar">
-        <header>My Menu</header>
+        <header>Menu</header>
         <a href="#homepage" class="active">
             <image src="assets/images/home-solid.svg" alt="homepage"></image><span>Home</span></a>
         <a href="#about">
@@ -78,19 +78,24 @@
 
     </section>
     <!-- End of Page 1 -->
-    <div class="lg-screen-row">
-        <section class="page2" id="about">
-            <div class="page2-wrapper">
-                <h2>Moshe Feldenkrais<br/>(1904-1984)</h2>
-                <p>The Feldenkrais Method was developed by Dr. Moshe Feldenkrais.<br/><br/> It teaches unity of mental and muscular through the body, allowing awareness, re-alignment and re-connection.<br/>
-                    <br/> Resulting in relief from involuntary contractions or limitations.<br/><br/></p>
-            </div>
-        </section>
 
-        <section class="page3" id="courses">
-            <div class="page3-title">
-                <h2>What We Provide</h2>
-            </div>
+    <!-- Page 2 on Div Class Wrapper For Side by Side -->
+    <section class="page2" id="about">
+        <div class="page2-image"> </div>
+        <div class="page2-text">
+            <h2>Moshe Feldenkrais<br/>(1904-1984)</h2>
+            <p>The Feldenkrais Method was developed by Dr. Moshe Feldenkrais.<br/><br/> It teaches unity of mental and muscular through the body, allowing awareness, re-alignment and re-connection.<br/>
+                <br/> Resulting in relief from involuntary contractions or limitations.<br/><br/></p>
+        </div>
+    </section>
+    <!-- End of Page 2 -->
+
+    <!-- Page 3 with Accordions -->
+    <section class="page3" id="courses">
+        <div class="page3-title">
+            <h2>What We Provide</h2>
+        </div>
+        <div class="page3-lg-wrapper">
             <div class="page3-top">
                 <button class="accordion" id="acc-atm"><h3>Awareness Through Movement<br />ATM</h3></button>
                 <div class="panel" id="panel-atm">
@@ -107,27 +112,60 @@
                     <h3>=== For Whom ===</h3>
                     <p>Individuals who wish to improve sports performance, daily functional movement (normal/stroke/parkison/etc..) and pain relief.</p>
                 </div>
-                <!-- <div class="page3-atm">
-                    <h3>Awareness Through Movement<br />ATM</h3>
-                    <p>Awareness Through Movement is a group class for exploration of the connection between brain and behaviour.</p>
-                    <h3>For Whom</h3>
-                    <p>People who seek movement modality, or to enhance your own movement performance.</p>
-                </div>
-                
-                    <a href="#contact">BOOK NOW!</a>
-                </div>
-                <div class="page3-fi">
-                    <h3>Functional Integration<br />FI</h3>
-                    <p>Functional Integration (FI) is a one on one lesson delivered by a certified practitioner.</p>
-                    <h3>For Whom</h3>
-                    <p>Individuals who wish to improve sports performance, daily functional movement (normal/stroke/parkison/etc..) and pain relief.</p>
-                </div> -->
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <!-- End of Page 3 -->
 
     <section class="page4" id="trainers">
+        <div class="page4-portrait-wrapper">
+            <div class="page4-portrait"></div>
+        </div>
+        <!-- <div class="page4-writeup-title">
+            <p>KHAW SA CHIEN</p>
+        </div> -->
+        <div class="page4-writeup">
+            <button class="accordion" id="acc-writeup">
+                <h3>KHAW SA CHIEN</h3>
+            </button>
+            <div class="panel" id="panel-writeup">
+                <p>Learnt Feldenkrais Method directly from Mia Segal (Moshe's Student) and Leora Gaster. With over 30 years of practice in bodywork therapy.<br/><br/> Expertise in Massotherapy, Myofascial therapy and Feldenkrais Method to relieve pain and
+                    treat injuries.<br/><br/>Works with stroke and parkison patients and volunteers at META home for the elderly.</p>
+            </div>
+        </div>
+        <div class="page4-slideshow">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/images/" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        </div>
     </section>
 
     <section class="page5" id="contact">
