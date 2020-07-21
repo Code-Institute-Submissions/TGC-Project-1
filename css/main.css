@@ -55,7 +55,7 @@ body {
 }
 
  ::-webkit-scrollbar-thumb {
-    background-color: rgba(226, 109, 92, 1.0);
+    background-color: rgba(250, 125, 100, 1.0);
     border-radius: 20px;
 }
 
@@ -244,12 +244,12 @@ label #cancel {
 }
 
 .sub-title h2 {
-    color: rgba(226, 109, 92, 1.0);
+    color: rgba(250, 125, 100, 1.0);
     font-size: 1.5rem;
     font-family: "mallanna";
     letter-spacing: 0.2rem;
     padding: 3rem 2rem;
-    text-shadow: 1px 1px 1px rgba(40, 44, 52, 1), 1px 2px 1px rgba(40, 44, 52, 1), 2px 2px 2px rgba(40, 44, 52, 1);
+    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1), 2px 2px 2px rgba(40, 44, 52, 1);
 }
 
 .cta-1-btn {
@@ -281,8 +281,8 @@ label #cancel {
 
 .cta-1-btn a:hover {
     color: white;
-    background-color: rgba(226, 109, 92, 1.0);
-    box-shadow: 0 0 10px rgba(226, 109, 92, 1.0), 0 0 40px rgba(226, 109, 92, 1.0), 0 0 80px rgba(226, 109, 92, 1.0);
+    background-color: rgba(250, 125, 100, 1.0);
+    box-shadow: 0 0 10px rgba(250, 125, 100, 1.0), 0 0 40px rgba(250, 125, 100, 1.0), 0 0 80px rgba(250, 125, 100, 1.0);
     transition-delay: 1s;
 }
 
@@ -296,7 +296,7 @@ label #cancel {
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+    background: linear-gradient(90deg, transparent, rgba(250, 125, 100, 1.0));
 }
 
 .cta-1-btn a:hover span:nth-child(1) {
@@ -309,7 +309,7 @@ label #cancel {
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, rgba(226, 109, 92, 1.0));
+    background: linear-gradient(180deg, transparent, rgba(250, 125, 100, 1.0));
 }
 
 .cta-1-btn a:hover span:nth-child(2) {
@@ -323,7 +323,7 @@ label #cancel {
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+    background: linear-gradient(90deg, transparent, rgba(250, 125, 100, 1.0));
 }
 
 .cta-1-btn a:hover span:nth-child(3) {
@@ -337,7 +337,7 @@ label #cancel {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, rgba(226, 109, 92, 1.0));
+    background: linear-gradient(180deg, transparent, rgba(250, 125, 100, 1.0));
 }
 
 .cta-1-btn a:hover span:nth-child(4) {
@@ -354,9 +354,9 @@ label #cancel {
     width: 100%;
     background-color: rgba(90, 43, 58, 0.8);
     border-top-right-radius: 60px;
-    border-top: 0.5rem ridge rgba(226, 109, 92, 1.0);
+    border-top: 0.5rem ridge rgba(250, 125, 100, 1.0);
     border-bottom-left-radius: 60px;
-    border-bottom: 0.5rem ridge rgba(226, 109, 92, 1.0);
+    border-bottom: 0.5rem groove rgba(250, 125, 100, 1.0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,7 +390,7 @@ label #cancel {
     height: auto;
     width: 80%;
     padding: 1rem 0 1rem 0;
-    border-bottom: 6px double rgba(226, 109, 92, 1.0);
+    border-bottom: 6px double rgba(250, 125, 100, 1.0);
 }
 
 .page1-textbox-2 {
@@ -446,7 +446,7 @@ label #cancel {
     text-align: center;
     line-height: 2rem;
     font-weight: 900;
-    text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey, 3px 3px 3px grey, 4px 4px 4px grey;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1), 2px 2px 2px rgba(40, 44, 52, 1);
     border-bottom: 0.5rem double rgba(114, 61, 70, 1);
 }
 
@@ -486,12 +486,12 @@ label #cancel {
     font-family: "montserrat";
     font-size: 1.5rem;
     font-weight: 900;
-    color: rgba(226, 109, 92, 1.0);
+    color: rgba(250, 125, 100, 1.0);
     letter-spacing: 0.2rem;
     padding: 1rem 2rem;
     text-align: center;
-    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1), 2px 2px 2px grey;
-    border-bottom: 4px groove rgba(226, 109, 92, 1.0);
+    text-shadow: 1px 1px 1px black, 2px 2px 2px rgba(40, 44, 52, 1), 2px 2px 3px grey;
+    border-bottom: 4px groove rgba(250, 125, 100, 1.0);
 }
 
 .page3-lg-wrapper {
@@ -513,7 +513,7 @@ label #cancel {
 .page3-divider {
     height: 0.5rem;
     width: auto;
-    background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+    background: linear-gradient(90deg, transparent, rgba(250, 125, 100, 1.0));
     margin: 1.5rem 2rem;
     display: flex;
     align-items: center;
@@ -557,7 +557,7 @@ label #cancel {
 .accordion:active,
 .accordion:hover {
     background-color: rgba(40, 44, 52, 1);
-    color: rgba(226, 109, 92, 1.0);
+    color: rgba(250, 125, 100, 1.0);
 }
 
 .panel {
@@ -574,7 +574,7 @@ label #cancel {
     content: '\2b9e';
     /* Unicode character for "plus" sign (+) */
     font-size: 2rem;
-    color: rgba(226, 109, 92, 1.0);
+    color: rgba(250, 125, 100, 1.0);
     float: right;
     margin-left: 5px;
 }
@@ -658,7 +658,7 @@ label #cancel {
 #page4-name h2 {
     font-family: "montserrat";
     font-size: 1.1rem;
-    color: rgba(226, 109, 92, 1.0);
+    color: rgba(250, 125, 100, 1.0);
     text-shadow: 1px 1px 1px black, 1px 2px 2px rgba(40, 44, 52, 1);
     margin: 0.7rem 0 0 0;
 }
@@ -690,7 +690,7 @@ label #cancel {
     border-top: 10px groove rgba(40, 44, 52, 1);
     border-bottom: 10px ridge rgba(40, 44, 52, 1);
     text-align: center;
-    color: rgba(226, 109, 92, 1.0);
+    color: rgba(250, 125, 100, 1.0);
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
@@ -741,6 +741,9 @@ label #cancel {
     background-color: rgba(255, 225, 168, 1.0);
     border-radius: 12px;
 }
+
+
+/* End of Page 4 Custom CSS */
 
 .page5 {
     height: 100vh;
@@ -946,7 +949,7 @@ label #cancel {
     .page3-divider {
         width: 1rem;
         height: 90%;
-        background: linear-gradient(360deg, transparent, rgba(226, 109, 92, 1.0));
+        background: linear-gradient(360deg, transparent, rgba(250, 125, 100, 1.0));
     }
     .accordion {
         width: 20rem;
@@ -960,7 +963,7 @@ label #cancel {
     }
     .accordion:after {
         font-size: 2.5rem;
-        color: rgba(226, 109, 92, 1.0);
+        color: rgba(250, 125, 100, 1.0);
     }
     .accordion.active:after {
         color: rgba(255, 225, 168, 1.0);
