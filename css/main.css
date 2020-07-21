@@ -1,864 +1,1021 @@
-    /* Downloaded Google Fonts */
-    
-    @font-face {
-        font-family: "mallanna";
-        src: url("../assets/fonts/mallanna-regular-webfont.woff2") format("woff2"), url("../assets/fonts/mallanna-regular-webfont.woff") format("woff");
-        font-weight: normal;
-        font-style: normal;
+/* Downloaded Google Fonts */
+
+@font-face {
+    font-family: "mallanna";
+    src: url("../assets/fonts/mallanna-regular-webfont.woff2") format("woff2"), url("../assets/fonts/mallanna-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../assets/fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* End of Fonts Settings */
+
+
+/* General Settings */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    font-family: "mallanna";
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 500vh;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/* End of General Settings */
+
+
+/* Scrollbar CSS */
+
+ ::-webkit-scrollbar {
+    width: 8px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: rgba(40, 44, 52, 1);
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: rgba(226, 109, 92, 1.0);
+    border-radius: 20px;
+}
+
+
+/* End of Scrollbar CSS */
+
+
+/* Side Navbar by CodeNepal Modified CSS */
+
+.sidebar {
+    position: fixed;
+    width: 180px;
+    left: -180px;
+    height: 100vh;
+    background: rgba(255, 225, 168, 1.0);
+    transition: all .5s ease;
+    z-index: 10;
+}
+
+.sidebar header {
+    font-size: 28px;
+    color: rgba(255, 225, 168, 1.0);
+    line-height: 70px;
+    text-align: center;
+    background: rgba(90, 43, 58, 1);
+    user-select: none;
+    font-family: "montserrat";
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
+}
+
+.sidebar img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 15px;
+    fill: white;
+}
+
+.sidebar a {
+    display: block;
+    height: 75px;
+    width: 100%;
+    color: rgba(40, 44, 52, 1);
+    font-weight: 900;
+    line-height: 75px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border-top: 2px solid rgba(255, 255, 255, .3);
+    border-left: 5px solid transparent;
+    font-family: 'Mallanna', sans-serif;
+    transition: all .5s ease;
+    /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey; */
+}
+
+.sidebar a:hover {
+    border-left: 5px solid rgba(90, 43, 58, 1);
+    color: rgba(90, 43, 58, 1);
+}
+
+.sidebar a span {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: fixed;
+    cursor: pointer;
+    fill: white;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    font-size: 29px;
+    background: rgba(255, 225, 168, 1.0);
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    z-index: 10;
+}
+
+label #cancel {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked~label #cancel {
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* End of Side Navbar */
+
+
+/* Page 1 Custom CSS */
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(40, 44, 52, 0.5);
+}
+
+
+/* Background Video for Page 1 */
+
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -5;
+    transform: translate(-60%, -50%);
+    overflow: hidden;
+    /* opacity: 0.6; */
+}
+
+
+/* Page1 top for Main Titles */
+
+.page1-top {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.main-title {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.main-title h1 {
+    color: rgba(255, 225, 168, 1.0);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1), 2px 2px 2px rgba(40, 44, 52, 1), 2px 3px 2px grey;
+    padding: 2rem 2rem 1rem 2rem;
+    font-family: "monsterrat";
+    line-height: 1.25;
+}
+
+
+/* Subtitles and Lines CSS */
+
+.sub-title {
+    height: 40%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.sub-title h2 {
+    color: rgba(226, 109, 92, 1.0);
+    font-size: 1.5rem;
+    font-family: "mallanna";
+    letter-spacing: 0.2rem;
+    padding: 3rem 2rem;
+    text-shadow: 1px 1px 1px rgba(40, 44, 52, 1), 1px 2px 1px rgba(40, 44, 52, 1), 2px 2px 2px rgba(40, 44, 52, 1);
+}
+
+.cta-1-btn {
+    margin: 2rem 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "montserrat";
+}
+
+.cta-1-btn a {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: rgb(255, 225, 168);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: rgba(90, 43, 58, 1);
+    box-shadow: 5px 10px 8px black;
+}
+
+.cta-1-btn a:hover {
+    color: white;
+    background-color: rgba(226, 109, 92, 1.0);
+    box-shadow: 0 0 10px rgba(226, 109, 92, 1.0), 0 0 40px rgba(226, 109, 92, 1.0), 0 0 80px rgba(226, 109, 92, 1.0);
+    transition-delay: 1s;
+}
+
+.cta-1-btn a span {
+    position: absolute;
+    display: block;
+}
+
+.cta-1-btn a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+}
+
+.cta-1-btn a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 0.5s;
+}
+
+.cta-1-btn a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(226, 109, 92, 1.0));
+}
+
+.cta-1-btn a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.cta-1-btn a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+}
+
+.cta-1-btn a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+}
+
+.cta-1-btn a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgba(226, 109, 92, 1.0));
+}
+
+.cta-1-btn a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.7s;
+}
+
+
+/* Page 1 Btm - Call to Action CSS */
+
+.page1-btm {
+    height: 30%;
+    width: 100%;
+    background-color: rgba(90, 43, 58, 0.8);
+    border-top-right-radius: 60px;
+    border-top: 0.5rem ridge rgba(226, 109, 92, 1.0);
+    border-bottom-left-radius: 60px;
+    border-bottom: 0.5rem ridge rgba(226, 109, 92, 1.0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+    box-shadow: 5px 10px 8px black;
+}
+
+
+/* Page 1 Btm - Text Boxes CSS */
+
+.page1-textbox {
+    height: 100%;
+    width: auto;
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+}
+
+.page1-textbox p {
+    color: rgba(255, 225, 168, 1.0);
+    font-family: "mallanna";
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.page1-textbox-1 {
+    height: auto;
+    width: 80%;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 6px double rgba(226, 109, 92, 1.0);
+}
+
+.page1-textbox-2 {
+    height: auto;
+    width: 65%;
+    padding: 0 0 1rem 8rem;
+}
+
+
+/* End of Page 1 Btm - Text Boxes CSS */
+
+
+/* End of Page 1 Custom CSS */
+
+
+/* Page 2 Custom CSS */
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(90, 43, 58, 1);
+    position: relative;
+}
+
+.page2-image {
+    height: 90%;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url(../assets/images/220px-Moshe_Feldenkrais.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    transform: translate(5%, 5%);
+}
+
+.page2-text {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+}
+
+.page2-text h2 {
+    background-color: rgba(255, 225, 168, 0.8);
+    color: rgba(40, 44, 52, 1);
+    font-family: "montserrat";
+    letter-spacing: 0.25rem;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey, 3px 3px 3px grey, 4px 4px 4px grey;
+    border-bottom: 0.5rem double rgba(114, 61, 70, 1);
+}
+
+.page2-text p {
+    background-color: rgba(255, 225, 168, 0.8);
+    color: rgba(40, 44, 52, 1);
+    font-family: "mallanna";
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+
+/* End of Page 2 Custom CSS */
+
+
+/* Page 3 Custom CSS */
+
+.page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(40, 44, 52, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.page3-title {
+    height: 10%;
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+
+.page3-title h2 {
+    font-family: "montserrat";
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgba(226, 109, 92, 1.0);
+    letter-spacing: 0.2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1), 2px 2px 2px grey;
+    border-bottom: 4px groove rgba(226, 109, 92, 1.0);
+}
+
+.page3-lg-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.page3-top {
+    height: 40%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/images/group2.jpeg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.page3-divider {
+    height: 0.5rem;
+    width: auto;
+    background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
+    margin: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-btm {
+    height: 40%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/images/housecall1-fixed.jpeg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+
+/* Course Information Accordion */
+
+.accordion {
+    background-color: rgba(90, 43, 58, 1);
+    color: rgba(255, 225, 168, 1.0);
+    font-family: "monserrat";
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border: 2px solid black;
+    /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey; */
+    margin: 0rem 0.5rem;
+}
+
+.accordion:active,
+.accordion:hover {
+    background-color: rgba(40, 44, 52, 1);
+    color: rgba(226, 109, 92, 1.0);
+}
+
+.panel {
+    padding: 0 1rem;
+    background-color: rgba(255, 225, 168, 1.0);
+    color: rgba(40, 44, 52, 1);
+    font-family: "mallanna";
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\2b9e';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 2rem;
+    color: rgba(226, 109, 92, 1.0);
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2b9c";
+    color: rgba(255, 225, 168, 1.0);
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+/* End of Accordion */
+
+
+/* End of Page 3 Custom CSS */
+
+
+/* Page 4 Custom CSS */
+
+.page4 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(90, 43, 58, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.page4-title {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page4-title h2 {
+    font-family: "montserrat";
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(255, 225, 168, 1.0);
+    letter-spacing: 0.2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1), 2px 2px 2px grey;
+    border-bottom: 4px groove rgba(40, 44, 52, 1);
+    letter-spacing: 0.2rem;
+}
+
+.page4-portrait-wrapper {
+    height: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0 0 1rem;
+}
+
+.page4-portrait {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../assets/images/trainer.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: 80% 50%;
+    display: flex;
+    align-items: flex-end;
+    border: 2px solid rgba(40, 44, 52, 1);
+}
+
+#page4-name {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(40, 44, 52, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#page4-name h2 {
+    font-family: "montserrat";
+    font-size: 1.1rem;
+    color: rgba(226, 109, 92, 1.0);
+    text-shadow: 1px 1px 1px black, 1px 2px 2px rgba(40, 44, 52, 1);
+    margin: 0.7rem 0 0 0;
+}
+
+#page4-name h3 {
+    font-family: "mallanna";
+    font-size: 0.8rem;
+    color: rgba(255, 225, 168, 1.0);
+    text-shadow: 1px 1px 1px black, 1px 2px 2px rgba(40, 44, 52, 1);
+    margin: 0.2rem 0;
+}
+
+.page4-trainer-info {
+    width: 50%;
+    height: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 0.25rem;
+    flex-direction: column;
+    padding-right: 1rem;
+}
+
+.trainer-info-top {
+    height: 20%;
+    width: 100%;
+    background-color: rgba(40, 44, 52, 0.9);
+    margin: 3rem 1rem 0 0;
+    border-top: 10px groove rgba(40, 44, 52, 1);
+    border-bottom: 10px ridge rgba(40, 44, 52, 1);
+    text-align: center;
+    color: rgba(226, 109, 92, 1.0);
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trainer-info-btm {
+    height: auto;
+    width: 100%;
+    border-bottom: 10px ridge rgba(40, 44, 52, 1);
+    background-color: rgba(40, 44, 52, 0.6);
+}
+
+.trainer-info-btm ul {
+    list-style-type: none;
+    margin: 0 0 0 0.9rem;
+    color: rgba(255, 225, 168, 1.0);
+}
+
+.page4-trainer-social {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    margin: 0 0 16rem 0;
+}
+
+#social-facebook img {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: rgba(255, 225, 168, 1.0);
+    border-radius: 12px;
+}
+
+#social-whatsapp img {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: rgba(255, 225, 168, 1.0);
+    border-radius: 12px;
+}
+
+#social-email img {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: rgba(255, 225, 168, 1.0);
+    border-radius: 12px;
+}
+
+.page5 {
+    height: 100vh;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+
+/* Media Queries */
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media only screen and (min-width: 576px) {
+    .main-title h1 {
+        padding: 1rem 2rem;
     }
-    
-    @font-face {
-        font-family: "montserrat";
-        src: url("../assets/fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../assets/fonts/montserrat-medium-webfont.woff") format("woff");
-        font-weight: normal;
-        font-style: normal;
+    .sub-title {
+        align-items: flex-end;
     }
-    /* End of Fonts Settings */
-    /* General Settings */
-    
-    * {
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-    }
-    
-    html {
-        font-family: "mallanna";
-        scroll-behavior: smooth;
-    }
-    
-    body {
-        height: 500vh;
-        width: 100%;
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    /* End of General Settings */
-    /* Scrollbar CSS */
-    
-     ::-webkit-scrollbar {
-        width: 2px;
-    }
-    
-     ::-webkit-scrollbar-track {
-        background-color: rgba(71, 45, 48, 1);
-    }
-    
-     ::-webkit-scrollbar-thumb {
-        background-color: rgba(226, 109, 92, 1.0);
-    }
-    /* End of Scrollbar CSS */
-    /* Side Navbar by CodeNepal Modified CSS */
-    
+}
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media only screen and (min-width: 768px) {
+    /* Side Navbar CSS by CodeNepal Modified */
     .sidebar {
-        position: fixed;
-        width: 180px;
-        left: -180px;
-        height: 100vh;
-        background: rgba(151, 132, 122, 1);
-        transition: all .5s ease;
-        z-index: 10;
+        height: auto;
+        width: 4.5rem;
+        left: 0;
+        margin: 200px 0;
+        z-index: 5;
     }
-    
-    .sidebar header {
-        font-size: 28px;
-        color: rgba(166, 161, 158, 1);
-        line-height: 70px;
-        text-align: center;
-        background: rgba(94, 79, 72, 1);
-        user-select: none;
-        font-family: "montserrat";
-        font-weight: 900;
-        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
-    }
-    
-    .sidebar img {
-        height: 30px;
-        width: 30px;
-        margin-right: 10px;
-        margin-top: 15px;
-        fill: white;
-    }
-    
-    .sidebar a {
-        display: block;
-        height: 75px;
-        width: 100%;
-        color: black;
-        font-weight: bold;
-        line-height: 75px;
-        padding-left: 20px;
-        box-sizing: border-box;
-        border-bottom: 2px solid black;
-        border-top: 2px solid rgba(255, 255, 255, .3);
-        border-left: 5px solid transparent;
-        font-family: 'Mallanna', sans-serif;
-        transition: all .5s ease;
-        /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey; */
-    }
-    
-    .sidebar a:hover {
-        border-left: 5px solid rgba(226, 109, 92, 1.0);
-        color: rgba(226, 109, 92, 1.0);
-        box-shadow: 0 0 10px rgba(226, 109, 92, 1.0), 0 0 40px rgba(226, 109, 92, 1.0), 0 0 80px rgba(226, 109, 92, 1.0);
-    }
-    
-    .sidebar a span {
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-    
-    #check {
+    header,
+    #btn,
+    #cancel {
         display: none;
     }
-    
-    label #btn,
-    label #cancel {
-        position: fixed;
-        cursor: pointer;
-        fill: white;
-        border-radius: 12px;
-        border: 1px solid #262626;
-        font-size: 29px;
-        background: rgba(255, 225, 168, 1.0);
-        height: 2.5rem;
-        width: 2.5rem;
+    .sidebar span {
+        position: absolute;
+        margin-left: 2rem;
+        opacity: 0;
+        visibility: hidden;
         text-align: center;
-        line-height: 45px;
-        transition: all .5s ease;
-        bottom: 0;
-        left: 0;
-        margin: 20px;
-        z-index: 10;
+        justify-content: center;
     }
-    
-    label #cancel {
-        opacity: 0;
-        visibility: hidden;
+    .sidebar a {
+        height: 60px;
+        padding: 0 0 0 1rem;
     }
-    
-    #check:checked~.sidebar {
-        left: 0;
+    .sidebar a:hover {
+        width: 12rem;
+        background: inherit;
     }
-    
-    #check:checked~label #btn {
-        margin-left: 245px;
-        opacity: 0;
-        visibility: hidden;
-    }
-    
-    #check:checked~label #cancel {
-        margin-left: 245px;
+    .sidebar a:hover span {
         opacity: 1;
         visibility: visible;
     }
-    /* End of Side Navbar */
-    /* Page 1 Custom CSS */
-    
-    .page1 {
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(71, 45, 48, 0.5);
-    }
-    /* Background Video for Page 1 */
-    
-    #bg-video {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -5;
-        transform: translate(-60%, -50%);
-        overflow: hidden;
-        /* opacity: 0.6; */
-    }
-    /* Page1 top for Main Titles */
-    
-    .page1-top {
-        height: 40%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-    }
-    
-    .main-title {
-        height: 60%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-    
+    /* End of Side Navbar CSS */
     .main-title h1 {
-        color: rgba(255, 225, 168, 1.0);
-        font-size: 2.5rem;
-        font-weight: 900;
-        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
-        padding: 2rem 2rem 1rem 2rem;
-        font-family: "monsterrat";
-        line-height: 1.25;
+        font-size: 3.5rem;
+        padding: 2rem 4rem;
     }
-    /* Subtitles and Lines CSS */
-    
     .sub-title {
-        height: 40%;
-        width: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
         align-items: flex-start;
-        text-align: center;
     }
-    
     .sub-title h2 {
-        color: rgba(226, 109, 92, 1.0);
-        font-size: 1.75rem;
-        font-family: "mallanna";
-        letter-spacing: 0.2rem;
+        font-size: 2.5rem;
         padding: 3rem 2rem;
-        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
     }
-    
-    .cta-1-btn {
-        margin: 2rem 0;
-        padding: 0;
-        height: auto;
-        width: 100%;
-        min-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* background-color: #031321; */
-        font-family: "montserrat";
-    }
-    
-    .cta-1-btn a {
-        position: relative;
-        display: inline-block;
-        padding: 1rem 2rem;
-        color: rgb(255, 225, 168);
-        text-transform: uppercase;
-        letter-spacing: 0.25rem;
-        text-decoration: none;
-        font-size: 1.5rem;
-        overflow: hidden;
-        transition: 0.5s;
-        background-color: rgba(114, 61, 70, 1);
-        box-shadow: 5px 10px 8px black;
-    }
-    
-    .cta-1-btn a:hover {
-        color: white;
-        background-color: rgba(226, 109, 92, 1.0);
-        box-shadow: 0 0 10px rgba(226, 109, 92, 1.0), 0 0 40px rgba(226, 109, 92, 1.0), 0 0 80px rgba(226, 109, 92, 1.0);
-        transition-delay: 1s;
-    }
-    
-    .cta-1-btn a span {
-        position: absolute;
-        display: block;
-    }
-    
-    .cta-1-btn a span:nth-child(1) {
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
-    }
-    
-    .cta-1-btn a:hover span:nth-child(1) {
-        left: 100%;
-        transition: 0.5s;
-    }
-    
-    .cta-1-btn a span:nth-child(2) {
-        top: -100%;
-        right: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(180deg, transparent, rgba(226, 109, 92, 1.0));
-    }
-    
-    .cta-1-btn a:hover span:nth-child(2) {
-        top: 100%;
-        transition: 0.5s;
-        transition-delay: 0.2s;
-    }
-    
-    .cta-1-btn a span:nth-child(3) {
-        bottom: 0;
-        right: -100%;
-        width: 100%;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
-    }
-    
-    .cta-1-btn a:hover span:nth-child(3) {
-        right: 100%;
-        transition: 0.5s;
-        transition-delay: 0.4s;
-    }
-    
-    .cta-1-btn a span:nth-child(4) {
-        bottom: -100%;
-        left: 0;
-        width: 2px;
-        height: 100%;
-        background: linear-gradient(180deg, transparent, rgba(226, 109, 92, 1.0));
-    }
-    
-    .cta-1-btn a:hover span:nth-child(4) {
-        bottom: 100%;
-        transition: 0.5s;
-        transition-delay: 0.7s;
-    }
-    /* Page 1 Btm - Call to Action CSS */
-    
     .page1-btm {
-        height: 30%;
-        width: 100%;
-        background-color: rgba(71, 45, 48, 0.8);
-        border-top-right-radius: 60px;
-        border-top: 0.5rem ridge rgba(226, 109, 92, 1.0);
-        border-bottom-left-radius: 60px;
-        border-bottom: 0.5rem ridge rgba(226, 109, 92, 1.0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 2rem 0;
-        box-shadow: 5px 10px 8px black;
+        margin: 6rem 0;
     }
-    /* Page 1 Btm - Text Boxes CSS */
-    
-    .page1-textbox {
-        height: 100%;
-        width: auto;
-        margin: 0;
-        padding: 0 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: left;
-        flex-direction: column;
-    }
-    
     .page1-textbox p {
-        color: rgba(255, 225, 168, 1.0);
-        font-family: "mallanna";
-        font-size: 1.25rem;
-        text-align: left;
-    }
-    
-    .page1-textbox-1 {
-        height: auto;
-        width: 70%;
-        padding: 1rem 0 1rem 0;
-        border-bottom: 6px double rgba(226, 109, 92, 1.0);
-    }
-    
-    .page1-textbox-2 {
-        height: auto;
-        width: 70%;
-        padding: 0 0 1rem 8rem;
-    }
-    /* End of Page 1 Btm - Text Boxes CSS */
-    /* End of Page 1 Custom CSS */
-    /* Page 2 Custom CSS */
-    
-    .page2 {
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(201, 203, 163, 1);
-        position: relative;
-    }
-    
-    .page2-image {
-        height: 90%;
-        width: 90%;
-        padding: 0;
-        margin: 0;
-        background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url(../assets/images/220px-Moshe_Feldenkrais.png);
-        background-repeat: none;
-        background-size: cover;
-        background-position: center;
-        transform: translate(5%, 5%);
-    }
-    
-    .page2-text {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 1;
-        top: 5%;
-    }
-    
-    .page2-text h2 {
-        background-color: rgba(201, 203, 163, 0.8);
-        color: rgba(71, 45, 48, 1);
-        font-family: "montserrat";
-        letter-spacing: 0.25rem;
-        font-size: 1.5rem;
-        margin-top: 10rem;
-        padding: 1rem 2rem;
-        text-align: center;
-        line-height: 2rem;
-        font-weight: 900;
-        text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey, 3px 3px 3px grey, 4px 4px 4px grey;
-        border-bottom: 0.5rem double rgba(71, 45, 48, 1);
-    }
-    
-    .page2-text p {
-        background-color: rgba(201, 203, 163, 0.8);
-        color: rgba(71, 45, 48, 1);
-        font-family: "mallanna";
-        letter-spacing: 0.1rem;
-        font-size: 1rem;
-        padding: 1rem 2rem;
-        text-align: left;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-    /* End of Page 2 Custom CSS */
-    /* Page 3 Custom CSS */
-    
-    .page3 {
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(71, 45, 48, 1);
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .page3-title {
-        height: 10%;
-        width: 100%;
-        margin: 1rem 0;
-    }
-    
-    .page3-title h2 {
-        font-family: "montserrat";
-        font-size: 1.5rem;
-        font-weight: 900;
-        color: rgba(226, 109, 92, 1.0);
-        letter-spacing: 0.2rem;
-        padding: 1rem 2rem;
-        text-align: center;
-        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
-        border-bottom: 4px double rgba(226, 109, 92, 1.0);
-    }
-    
-    .page3-lg-wrapper {
-        height: 100%;
-        width: 100%;
-    }
-    
-    .page3-top {
-        height: 40%;
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../assets/images/group2.jpeg);
-        background-repeat: none;
-        background-size: cover;
-    }
-    
-    .page3-divider {
-        height: 0.5rem;
-        width: auto;
-        background: linear-gradient(90deg, transparent, rgba(226, 109, 92, 1.0));
-        margin: 1.5rem 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .page3-btm {
-        height: 40%;
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../assets/images/housecall1-fixed.jpeg);
-        background-repeat: none;
-        background-size: cover;
-    }
-    /* Course Information Accordion */
-    
-    .accordion {
-        background-color: rgba(71, 45, 48, 1);
-        color: rgba(255, 225, 168, 1);
-        font-family: "monserrat";
-        font-size: 1rem;
-        font-weight: 900;
-        line-height: 1.5rem;
-        cursor: pointer;
-        padding: 1rem;
-        width: 10rem;
-        height: 10rem;
-        text-align: center;
-        border: none;
-        outline: none;
-        transition: 0.4s;
-        border: 2px solid black;
-        /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey; */
-        margin: 0rem 0.5rem;
-    }
-    
-    .accordion:active,
-    .accordion:hover {
-        background-color: rgba(226, 109, 92, 1.0);
-        color: rgba(71, 45, 48, 1);
-    }
-    
-    .panel {
-        padding: 0 1rem;
-        background-color: rgba(255, 225, 168, 1);
-        color: rgba(71, 45, 48, 1);
-        font-family: "mallanna";
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-    }
-    
-    .accordion:after {
-        content: '\2b9e';
-        /* Unicode character for "plus" sign (+) */
         font-size: 2rem;
-        color: #777;
-        float: right;
-        margin-left: 5px;
+        text-align: center;
     }
-    
-    .accordion.active:after {
-        content: "\2b9c";
-        /* Unicode character for "minus" sign (-) */
-    }
-    /* End of Accordion */
-    /* End of Page 3 Custom CSS */
-    /* Page 4 Custom CSS */
-    
-    .page4 {
-        height: 100vh;
+    .page1-textbox-1 {
+        padding: 3rem 0;
         width: 100%;
-        background-color: rgba(201, 203, 163, 1);
-        display: flex;
-        flex-wrap: wrap;
+    }
+    .page1-textbox-2 {
+        padding: 3rem 0;
+        width: 100%;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .main-title h1 {
+        width: 50%;
+    }
+    .page1-textbox p {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .page1-textbox-1 {
+        width: 100%;
+        padding: 4rem 4rem 5rem 0rem;
+    }
+    .page1-textbox-2 {
+        width: 100%;
+        padding: 2rem 2rem 4rem 0rem;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /* Resize Background Video */
+    body {
         flex-direction: column;
     }
-    
-    .page4-portrait-wrapper {
-        height: 25%;
-        width: auto;
+    #bg-video {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    .main-title h1 {
+        width: 50%;
+    }
+    .page1-textbox p {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .page1-textbox-1 {
+        width: 100%;
+        padding: 2rem 2rem 2.5rem 2rem;
+    }
+    .page1-textbox-2 {
+        width: 100%;
+        padding: 2rem;
+    }
+    .page2 {
+        width: 100%;
+        height: 100vh;
         display: flex;
+        flex-direction: row;
+    }
+    .page2-image {
+        width: 50%;
+        height: 93%;
+        position: static;
+        transform: none;
+        margin: 2rem;
+    }
+    .page2-text {
+        width: 45%;
+        height: 100%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .page2-text h2 {
+        padding: 2rem 1rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin: 2rem 2rem 4rem;
+    }
+    .page2-text p {
+        font-size: 1.75rem;
+        padding: 2rem 5rem;
+        letter-spacing: 0.25rem;
+        margin: 0 0 5rem 0;
+        line-height: 2rem;
+    }
+    .page3 {
+        width: 100%;
+        height: 100vh;
+    }
+    .page3-lg-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 70%;
+    }
+    .page3-title {
+        height: 20%;
+    }
+    .page3-title h2 {
+        font-size: 4rem;
+        padding: 3rem 0;
+        margin: 0 0 1rem 0;
+    }
+    .page3-top {
+        width: 49%;
+        height: 100%;
+        margin: 0 2rem;
+        background-position: center;
+    }
+    .page3-btm {
+        width: 49%;
+        height: 100%;
+        margin: 0rem 2rem;
+        background-position: center;
+    }
+    .page3-divider {
+        width: 1rem;
+        height: 90%;
+        background: linear-gradient(360deg, transparent, rgba(226, 109, 92, 1.0));
+    }
+    .accordion {
+        width: 20rem;
+        height: 15rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin: 20rem 0 0 3rem;
+    }
+    .panel {
+        font-size: 1.3rem;
+    }
+    .accordion:after {
+        font-size: 2.5rem;
+        color: rgba(226, 109, 92, 1.0);
+    }
+    .accordion.active:after {
+        color: rgba(255, 225, 168, 1.0);
+    }
+    .page4-title h2 {
+        padding: 4rem 0 1rem 0;
+        font-size: 2.5rem;
+    }
+    .page4-portrait-wrapper {
+        height: 70%;
+        width: 20%;
+        margin: 2rem 0 5rem 20rem;
+    }
+    #page4-name h2 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    #page4-name h3 {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+    .page4-trainer-info {
+        width: 30%;
+        height: 70%;
+    }
+    .trainer-info-top {
+        height: 30%;
+    }
+    .trainer-info-top h3 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    .trainer-info-btm {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
-    .page4-portrait {
-        height: 150px;
-        width: 150px;
-        background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url(../assets/images/trainer.jpg);
-        background-repeat: none;
-        background-size: contain;
-        border-radius: 80px;
+    .trainer-info-btm ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    /* .page4-writeup-title {
-        height: 10%;
-        width: auto;
-    }
-    
-    .page4-writeup-title p {
-        font-family: "montserrat";
-        font-size: 1.5rem;
-        font-weight: 900;
-        text-align: center;
-        padding: 1rem 2rem;
-        color: rgba(226, 109, 92, 1.0);
-        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
-        border-bottom: 4px double rgba(226, 109, 92, 1.0);
-    } */
-    
-    .page4-writeup {
-        height: 30%;
-        width: auto;
-        padding: 0 2rem;
-        text-align: center;
-    }
-    
-    #acc-writeup {
-        background-color: transparent;
-        color: rgba(226, 109, 92, 1.0);
-        font-family: "monserrat";
+    .trainer-info-btm li {
         font-size: 1.25rem;
-        width: 90%;
-        height: 2rem;
-        text-align: center;
-        border: none;
+        letter-spacing: 0.2rem;
+        padding: 0.3rem;
+    }
+    .page4-trainer-social {
+        width: 5%;
+        height: 40%;
+        flex-direction: column;
+        margin: 2rem 3rem 0 0;
         padding: 0;
-        margin: 1rem 0;
-        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
     }
-    
-    #acc-writeup::after {
-        content: '\02795';
-        /* Unicode character for "plus" sign (+) */
-        font-size: 13px;
-        color: #777;
-        float: top right;
-        margin: 0px 0px 20px 0px;
-    }
-    
-    #acc-writeup:active:after {
-        content: "\2796";
-        /* Unicode character for "minus" sign (-) */
-    }
-    
-    #panel-writeup {
-        z-index: 2;
-        background-color: rgba(71, 45, 48, 1);
-        color: rgba(255, 225, 168, 1);
-    }
-    
-    .page4-slideshow {
-        height: 30%;
-        width: 100%;
-        /* background-color: orange; */
-    }
-    
-    .page5 {
-        height: 100vh;
-        width: 100%;
-        background-color: darkslategray;
-    }
-    /* Media Queries */
-    /* Small devices (landscape phones, 576px and up) */
-    
-    @media only screen and (min-width: 576px) {
-        .main-title h1 {
-            padding: 1rem 2rem;
-        }
-        .sub-title {
-            align-items: flex-end;
-        }
-        /* .sub-title:before {
-        top: 42%;
-        left: 20%;
-        width: 60px;
-    }
-    
-    .sub-title:after {
-        top: 42%;
-        right: 20%;
-        width: 60px;
-    } */
-    }
-    /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-    
-    @media only screen and (min-width: 768px) {
-        /* Side Navbar CSS by CodeNepal Modified */
-        .sidebar {
-            height: auto;
-            width: 4.5rem;
-            left: 0;
-            margin: 200px 0;
-            z-index: 5;
-        }
-        header,
-        #btn,
-        #cancel {
-            display: none;
-        }
-        .sidebar span {
-            position: absolute;
-            margin-left: 2rem;
-            opacity: 0;
-            visibility: hidden;
-            text-align: center;
-            justify-content: center;
-        }
-        .sidebar a {
-            height: 60px;
-            padding: 0 0 0 1rem;
-        }
-        .sidebar a:hover {
-            width: 12rem;
-            background: inherit;
-        }
-        .sidebar a:hover span {
-            opacity: 1;
-            visibility: visible;
-        }
-        /* End of Side Navbar CSS */
-        .main-title h1 {
-            font-size: 3.5rem;
-            padding: 2rem 4rem;
-        }
-        .sub-title {
-            align-items: flex-start;
-        }
-        .sub-title h2 {
-            font-size: 2.5rem;
-            padding: 3rem 2rem;
-        }
-        .page1-btm {
-            margin: 6rem 0;
-        }
-        .page1-textbox p {
-            font-size: 2rem;
-            text-align: center;
-        }
-        .page1-textbox-1 {
-            padding: 3rem 0;
-            width: 100%;
-        }
-        .page1-textbox-2 {
-            padding: 3rem 0;
-            width: 100%;
-        }
-    }
-    /* Large devices (desktops, 992px and up) */
-    
-    @media only screen and (min-width: 992px) {
-        .main-title h1 {
-            width: 50%;
-        }
-        .page1-textbox p {
-            font-size: 2.5rem;
-            text-align: center;
-        }
-        .page1-textbox-1 {
-            width: 100%;
-            padding: 4rem 4rem 5rem 0rem;
-        }
-        .page1-textbox-2 {
-            width: 100%;
-            padding: 2rem 2rem 4rem 0rem;
-        }
-    }
-    /* Extra large devices (large desktops, 1200px and up) */
-    
-    @media only screen and (min-width: 1200px) {
-        /* Resize Background Video */
-        body {
-            flex-direction: column;
-        }
-        #bg-video {
-            top: 0;
-            left: 0;
-            transform: none;
-        }
-        .main-title h1 {
-            width: 50%;
-        }
-        .page1-textbox p {
-            font-size: 2rem;
-            text-align: center;
-        }
-        .page1-textbox-1 {
-            width: 100%;
-            padding: 2rem 2rem 2.5rem 2rem;
-        }
-        .page1-textbox-2 {
-            width: 100%;
-            padding: 2rem;
-        }
-        .page2 {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-        }
-        .page2-image {
-            width: 50%;
-            height: 93%;
-            position: static;
-            transform: none;
-            margin: 2rem;
-        }
-        .page2-text {
-            width: 50%;
-            height: 100%;
-            position: static;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .page2-text h2 {
-            padding: 2rem 1rem;
-            font-size: 2.5rem;
-            line-height: 3rem;
-            margin: 2rem 2rem 4rem;
-        }
-        .page2-text p {
-            font-size: 1.75rem;
-            padding: 1rem 5rem;
-            letter-spacing: 0.25rem;
-            line-height: 2rem;
-        }
-        .page3 {
-            width: 100%;
-            height: 100vh;
-        }
-        .page3-lg-wrapper {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: 70%;
-            margin: 2rem 0;
-        }
-        .page3-title {
-            height: 20%;
-        }
-        .page3-title h2 {
-            font-size: 4rem;
-            padding: 3rem 0;
-            margin: 2rem 0;
-        }
-        .page3-top {
-            width: 49%;
-            height: 100%;
-            margin: 0 2rem;
-            background-position: center;
-        }
-        .page3-btm {
-            width: 49%;
-            height: 100%;
-            margin: 0rem 2rem;
-            background-position: center;
-        }
-        .page3-divider {
-            width: 1rem;
-            height: 80%;
-        }
-        .accordion {
-            width: 20rem;
-            height: 15rem;
-            font-size: 1.5rem;
-            line-height: 2.5rem;
-            margin: 20rem 0 0 0;
-        }
-        .panel {
-            font-size: 1.3rem;
-        }
-        .accordion:after {
-            font-size: 2.5rem;
-            color: green;
-        }
-        .accordion.active:after {
-            color: red;
-        }
-    }
+}
