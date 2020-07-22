@@ -478,7 +478,7 @@ label #cancel {
 }
 
 .page3-title {
-    height: 20%;
+    height: 15%;
     width: 90%;
     margin: 0 0 1rem 0;
 }
@@ -1086,12 +1086,16 @@ input[type=submit]:hover {
     }
     .main-title h1 {
         width: 80%;
-        font-size: 5rem;
+        font-size: 4rem;
         padding: 2rem 0 0 0;
     }
     .sub-title h2 {
-        font-size: 4rem;
-        padding: 0 0 2rem 0;
+        font-size: 3rem;
+        padding: 1rem 0 2rem 0;
+    }
+    .page1-textbox {
+        height: 100%;
+        width: 80%;
     }
     .page1-textbox p {
         font-size: 2rem;
@@ -1099,11 +1103,68 @@ input[type=submit]:hover {
     }
     .page1-textbox-1 {
         width: 100%;
-        padding: 2rem 2rem 2.5rem 2rem;
+        padding: 1.5rem;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .page1-textbox-2 {
         width: 100%;
-        padding: 2rem;
+        padding: 1.5rem;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page2-image {
+        background-position: top;
+    }
+    .page2-text {
+        margin: 7rem 0 0 0;
+    }
+    .accordion {
+        font-size: 1.2rem;
+    }
+    .page4-portrait-wrapper {
+        width: 18%;
+        margin-left: 15%;
+    }
+    #page4-name h2 {
+        font-size: 1rem;
+    }
+    #page4-name h3 {
+        font-size: 0.8rem;
+    }
+    .page4-trainer-info {
+        height: 55%;
+    }
+    .trainer-info-top {
+        margin: 5rem 0 0 0;
+    }
+    .trainer-info-btm {
+        height: 70%;
+    }
+    input[type=checkbox] {
+        height: 2rem;
+        width: 2rem;
+    }
+    label[for=male],
+    label[for=female],
+    label[for=none] {
+        font-size: 1.5rem;
+        margin: 0.4rem;
+    }
+    #c-textarea {
+        font-size: 1.2rem;
+        height: 8rem;
+        width: 25rem;
+        margin: 1rem 0 0 0;
+    }
+    input[type=submit] {
+        font-size: 1.5rem;
+        height: 3rem;
+        width: 12rem;
     }
 }
 
@@ -1157,7 +1218,7 @@ input[type=submit]:hover {
     }
     .page2-text {
         width: 45%;
-        height: 50%;
+        height: 80%;
         position: static;
         display: flex;
         flex-direction: column;
@@ -1345,8 +1406,9 @@ input[type=submit]:hover {
     #c-textarea {
         resize: none;
         font-size: 1.5rem;
-        height: 20rem;
+        height: 21rem;
         width: 30rem;
+        margin: 0;
     }
     input[type=submit] {
         font-size: 2rem;
