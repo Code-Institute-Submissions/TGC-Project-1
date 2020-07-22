@@ -432,7 +432,7 @@ label #cancel {
     width: 100%;
     position: absolute;
     z-index: 1;
-    top: 5%;
+    top: 32%;
 }
 
 .page2-text h2 {
@@ -441,7 +441,7 @@ label #cancel {
     font-family: "montserrat";
     letter-spacing: 0.25rem;
     font-size: 1.5rem;
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
     padding: 1rem 2rem;
     text-align: center;
     line-height: 2rem;
@@ -691,11 +691,13 @@ label #cancel {
     border-bottom: 10px ridge rgba(40, 44, 52, 1);
     text-align: center;
     color: rgba(250, 125, 100, 1.0);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "montserrat";
+    line-height: 1.2rem;
 }
 
 .trainer-info-btm {
@@ -718,7 +720,7 @@ label #cancel {
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
-    margin: 0 0 16rem 0;
+    margin: 0 0 3rem 0;
 }
 
 #social-facebook img {
@@ -748,7 +750,120 @@ label #cancel {
 .page5 {
     height: 100vh;
     width: 100%;
-    background-color: darkslategray;
+    background-color: rgba(40, 44, 52, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-wrapper {
+    height: 90%;
+    width: 80%;
+    background-color: rgba(255, 225, 168, 1.0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* .contact-form-wrapper form{
+    display:flex;
+    flex-direction: column;
+}    */
+
+#contact-form-title {
+    padding: 1rem 2.5rem;
+    border-bottom: 6px ridge rgba(40, 44, 52, 1.0);
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+#contact-form-title h2 {
+    font-family: "montserrat";
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: rgba(40, 44, 52, 1.0);
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black, 2px 2px 2px rgba(40, 44, 52, 1.0), 2px 2px 2px grey;
+}
+
+#c-name {
+    border-radius: 12px;
+    width: 15rem;
+    height: 5%;
+    font-family: "mallanna";
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+#c-email {
+    border-radius: 12px;
+    width: 15rem;
+    height: 5%;
+    font-family: "mallanna";
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+label[for=c-gender] {
+    font-size: 1.2rem;
+    font-weight: 900;
+    width: 15rem;
+    align-self: center;
+    font-family: "montserrat";
+}
+
+label[for=male] {
+    font-family: "montserrat";
+    font-size: 1.2rem;
+}
+
+label[for=female] {
+    font-family: "montserrat";
+    font-size: 1.2rem;
+}
+
+label[for=none] {
+    font-family: "montserrat";
+    font-size: 1.2rem;
+}
+
+.c-gender {
+    width: 15rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+input[type=checkbox] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=submit] {
+    border-radius: 12px;
+    width: 12rem;
+    height: 3rem;
+    margin: 0.75rem 0 0 1.75rem;
+    font-family: "montserrat";
+    color: rgb(255, 225, 168);
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    overflow: hidden;
+    background-color: rgba(90, 43, 58, 1);
+    box-shadow: 5px 10px 8px black;
 }
 
 

@@ -7,7 +7,8 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- SweetAlert2 - Popup CSS / https://sweetalert2.github.io/ -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
@@ -166,11 +167,34 @@
     </section>
 
     <section class="page5" id="contact">
+        <div class="contact-form-wrapper">
+            <div id="contact-form-title">
+                <h2>Have Some Questions?</h2>
+            </div>
+            <form id="myForm" onsubmit="return validateForm()" method="post">
+                <!-- <label for="c-name">Full Name:</label><br /> -->
+                <input type="text" id="c-name" name="c-name" placeholder="Enter Your Full Name"><br />
+                <!-- <label for="c-email">Email:</label><br /> -->
+                <input type="text" id="c-email" name="c-email" placeholder="What's Your Contact Email"><br />
+                <label for="c-gender">How Do We Address You:</label><br />
+                <div class="c-gender">
+                    <input type="checkbox" id="c-male" name="c-gender" value="male" onclick="onlyOne(this)">
+                    <label for="male">Mr.</label>
+                    <input type="checkbox" id="c-female" name="c-gender" value="female" onclick="onlyOne(this)">
+                    <label for="female">Ms.</label>
+                    <input type="checkbox" id="c-none" name="c-gender" value="none" onclick="onlyOne(this)">
+                    <label for="none">None</label><br />
+                </div>
+                <textarea id="c-textarea" name="c-textarea" rows="8" cols="35" placeholder="Kindly indicate what inquiries you have that we can address..."></textarea><br />
+                <input type="submit" value="Submit" c onclick="acknowledgement()"><br />
+            </form>
+        </div>
 
     </section>
 
 
     <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/sweetalert2.all.min.js" type="text/javascript"></script>
 </body>
 
 </html>
