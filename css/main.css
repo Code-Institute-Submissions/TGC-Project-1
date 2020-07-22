@@ -474,24 +474,25 @@ label #cancel {
     background-color: rgba(40, 44, 52, 1);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .page3-title {
-    height: 10%;
-    width: 100%;
+    height: 20%;
+    width: 90%;
     margin: 0 0 1rem 0;
 }
 
 .page3-title h2 {
     font-family: "montserrat";
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
     color: rgba(250, 125, 100, 1.0);
     letter-spacing: 0.2rem;
     padding: 1rem 2rem;
     text-align: center;
     text-shadow: 1px 1px 1px black, 2px 2px 2px rgba(40, 44, 52, 1), 2px 2px 3px grey;
-    border-bottom: 4px groove rgba(250, 125, 100, 1.0);
+    border-bottom: 8px groove rgba(250, 125, 100, 1.0);
 }
 
 .page3-lg-wrapper {
@@ -616,11 +617,11 @@ label #cancel {
     font-size: 2rem;
     font-weight: 900;
     color: rgba(255, 225, 168, 1.0);
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.5rem;
     padding: 1rem 2rem;
     text-align: center;
     text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1), 2px 2px 2px grey;
-    border-bottom: 4px groove rgba(40, 44, 52, 1);
+    border-bottom: 6px groove rgba(40, 44, 52, 1);
     letter-spacing: 0.2rem;
 }
 
@@ -630,7 +631,7 @@ label #cancel {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 2rem 0 0 1rem;
+    margin: 1rem 0 0 1rem;
 }
 
 .page4-portrait {
@@ -673,7 +674,7 @@ label #cancel {
 
 .page4-trainer-info {
     width: 50%;
-    height: 65%;
+    height: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -686,18 +687,18 @@ label #cancel {
     height: 20%;
     width: 100%;
     background-color: rgba(40, 44, 52, 0.9);
-    margin: 3rem 1rem 0 0;
+    margin: 2rem 1rem 0 0;
     border-top: 10px groove rgba(40, 44, 52, 1);
     border-bottom: 10px ridge rgba(40, 44, 52, 1);
     text-align: center;
     color: rgba(250, 125, 100, 1.0);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: "montserrat";
-    line-height: 1.2rem;
+    line-height: 1.5rem;
 }
 
 .trainer-info-btm {
@@ -720,32 +721,30 @@ label #cancel {
     justify-content: space-between;
     align-items: center;
     padding: 0 3rem;
-    margin: 0 0 3rem 0;
+    margin: 0 0 1rem 0;
 }
 
-#social-facebook img {
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: rgba(255, 225, 168, 1.0);
-    border-radius: 12px;
-}
-
-#social-whatsapp img {
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: rgba(255, 225, 168, 1.0);
-    border-radius: 12px;
-}
-
+#social-facebook img,
+#social-whatsapp img,
 #social-email img {
     height: 3.5rem;
     width: 3.5rem;
     background-color: rgba(255, 225, 168, 1.0);
     border-radius: 12px;
+    box-shadow: 5px 10px 8px black;
+}
+
+#social-facebook img:hover,
+#social-whatsapp img:hover,
+#social-email img:hover {
+    background-color: rgba(250, 125, 100, 1.0);
 }
 
 
 /* End of Page 4 Custom CSS */
+
+
+/* Page 5 Custom CSS */
 
 .page5 {
     height: 100vh;
@@ -766,12 +765,6 @@ label #cancel {
     justify-content: flex-start;
 }
 
-
-/* .contact-form-wrapper form{
-    display:flex;
-    flex-direction: column;
-}    */
-
 #contact-form-title {
     padding: 1rem 2.5rem;
     border-bottom: 6px ridge rgba(40, 44, 52, 1.0);
@@ -788,46 +781,40 @@ label #cancel {
     text-shadow: 1px 1px 1px black, 2px 2px 2px rgba(40, 44, 52, 1.0), 2px 2px 2px grey;
 }
 
-#c-name {
-    border-radius: 12px;
-    width: 15rem;
-    height: 5%;
-    font-family: "mallanna";
-    font-size: 1.2rem;
-    padding: 0.5rem 0;
-    margin: 0 0 1rem 0;
-    text-align: center;
+#myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
+#myForm-lg-left {
+    height: 45%;
+}
+
+#c-name,
 #c-email {
     border-radius: 12px;
     width: 15rem;
-    height: 5%;
+    height: 8%;
     font-family: "mallanna";
     font-size: 1.2rem;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     margin: 0 0 1rem 0;
     text-align: center;
 }
 
 label[for=c-gender] {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 900;
     width: 15rem;
-    align-self: center;
+    margin-left: 2rem;
     font-family: "montserrat";
 }
 
-label[for=male] {
-    font-family: "montserrat";
-    font-size: 1.2rem;
-}
-
-label[for=female] {
-    font-family: "montserrat";
-    font-size: 1.2rem;
-}
-
+label[for=male],
+label[for=female],
 label[for=none] {
     font-family: "montserrat";
     font-size: 1.2rem;
@@ -835,10 +822,10 @@ label[for=none] {
 
 .c-gender {
     width: 15rem;
-    height: 2rem;
+    height: 3rem;
     display: flex;
     justify-content: space-evenly;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 input[type=checkbox] {
@@ -848,13 +835,16 @@ input[type=checkbox] {
 
 textarea {
     resize: none;
+    height: 8rem;
+    width: 15rem;
+    font-size: 1rem;
 }
 
 input[type=submit] {
     border-radius: 12px;
     width: 12rem;
     height: 3rem;
-    margin: 0.75rem 0 0 1.75rem;
+    margin: 0.75rem 0 0 0;
     font-family: "montserrat";
     color: rgb(255, 225, 168);
     text-transform: uppercase;
@@ -864,7 +854,16 @@ input[type=submit] {
     overflow: hidden;
     background-color: rgba(90, 43, 58, 1);
     box-shadow: 5px 10px 8px black;
+    font-weight: 900;
 }
+
+input[type=submit]:hover {
+    background-color: rgba(250, 125, 100, 1.0);
+    color: rgba(40, 44, 52, 1.0);
+}
+
+
+/* End of Page 5 Custom CSS */
 
 
 /* Media Queries */
@@ -982,7 +981,13 @@ input[type=submit] {
         transform: none;
     }
     .main-title h1 {
-        width: 50%;
+        width: 80%;
+        font-size: 5rem;
+        padding: 2rem 0 0 0;
+    }
+    .sub-title h2 {
+        font-size: 4rem;
+        padding: 0 0 2rem 0;
     }
     .page1-textbox p {
         font-size: 2rem;
@@ -1007,6 +1012,7 @@ input[type=submit] {
         height: 93%;
         position: static;
         transform: none;
+        background-position: top;
         margin: 2rem;
     }
     .page2-text {
@@ -1023,6 +1029,7 @@ input[type=submit] {
         font-size: 2.5rem;
         line-height: 3rem;
         margin: 2rem 2rem 4rem;
+        border: 8px ridge rgba(40, 44, 52, 1.0);
     }
     .page2-text p {
         font-size: 1.75rem;
@@ -1030,6 +1037,7 @@ input[type=submit] {
         letter-spacing: 0.25rem;
         margin: 0 0 5rem 0;
         line-height: 2rem;
+        border: 8px ridge rgba(40, 44, 52, 1.0);
     }
     .page3 {
         width: 100%;
@@ -1043,11 +1051,13 @@ input[type=submit] {
     }
     .page3-title {
         height: 20%;
+        width: 60%;
     }
     .page3-title h2 {
         font-size: 4rem;
         padding: 3rem 0;
         margin: 0 0 1rem 0;
+        border-bottom: 8px groove rgba(250, 125, 100, 1.0);
     }
     .page3-top {
         width: 49%;
@@ -1084,8 +1094,9 @@ input[type=submit] {
         color: rgba(255, 225, 168, 1.0);
     }
     .page4-title h2 {
-        padding: 4rem 0 1rem 0;
-        font-size: 2.5rem;
+        padding: 4rem 4rem 1rem 4rem;
+        font-size: 4rem;
+        border-bottom: 8px groove rgba(40, 44, 52, 1.0)
     }
     .page4-portrait-wrapper {
         height: 70%;
@@ -1103,6 +1114,7 @@ input[type=submit] {
     .page4-trainer-info {
         width: 30%;
         height: 70%;
+        margin: 1rem 0;
     }
     .trainer-info-top {
         height: 30%;
@@ -1110,6 +1122,7 @@ input[type=submit] {
     .trainer-info-top h3 {
         font-size: 2rem;
         letter-spacing: 0.2rem;
+        line-height: 3.25rem;
     }
     .trainer-info-btm {
         height: 70%;
@@ -1135,5 +1148,70 @@ input[type=submit] {
         flex-direction: column;
         margin: 2rem 3rem 0 0;
         padding: 0;
+    }
+    #contact-form-title h2 {
+        font-size: 3.5rem;
+        padding: 2rem;
+    }
+    #myForm {
+        width: 80%;
+        height: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+    #myForm-lg-left,
+    #myForm-lg-right {
+        width: 50%;
+        height: 80%;
+        margin: 0;
+    }
+    #myForm-lg-bottom {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #c-name,
+    #c-email {
+        width: 80%;
+        height: 10%;
+        margin: 0 0 3rem 2rem;
+        font-size: 2rem;
+    }
+    label[for=c-gender] {
+        width: 80%;
+        height: auto;
+        margin: 0 0 3rem;
+        padding: 2rem 0 0 2rem;
+        font-size: 1.5rem;
+    }
+    .c-gender {
+        width: 80%;
+    }
+    input[type=checkbox] {
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem 0 0 3rem;
+    }
+    label[for=male],
+    label[for=female],
+    label[for=none] {
+        font-size: 2rem;
+        margin: 1rem 0 0 0;
+    }
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 75%;
+        font-size: 1.5rem;
+        /* margin: 1rem 0 0 20rem; */
+    }
+    input[type=submit] {
+        font-size: 2rem;
+        width: 20rem;
+        height: 4rem;
+        margin: 0 2rem 0 0;
     }
 }

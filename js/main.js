@@ -63,6 +63,7 @@ function acknowledgement() {
             'We will be contacting you soon!',
             'success'
         )
+        document.getElementById("myForm").reset();
     }
 }
 // End of Form Checking and Prompting

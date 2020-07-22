@@ -151,15 +151,15 @@
         </div>
         <div class="page4-trainer-social">
             <div id="social-facebook">
-                <a href="https://www.facebook.com/sachien.khaw"><img src="assets/images/facebook-brands.svg"></img>
+                <a href="https://www.facebook.com/sachien.khaw" target="_blank"><img src="assets/images/facebook-brands.svg"></img>
                 </a>
             </div>
             <div id="social-whatsapp">
-                <a href="tel:+65-96820852"><img src="assets/images/whatsapp-brands.svg"></img>
+                <a href="tel:+65-96820852" target="_blank"><img src="assets/images/whatsapp-brands.svg"></img>
                 </a>
             </div>
             <div id="social-email">
-                <a href="mailto:sachienkhaw@gmail.com"><img src="assets/images/envelope-open-text-solid.svg"></img>
+                <a href="mailto:sachienkhaw@gmail.com" target="_blank"><img src="assets/images/envelope-open-text-solid.svg"></img>
                 </a>
             </div>
 
@@ -172,21 +172,25 @@
                 <h2>Have Some Questions?</h2>
             </div>
             <form id="myForm" onsubmit="return validateForm()" method="post">
-                <!-- <label for="c-name">Full Name:</label><br /> -->
-                <input type="text" id="c-name" name="c-name" placeholder="Enter Your Full Name"><br />
-                <!-- <label for="c-email">Email:</label><br /> -->
-                <input type="text" id="c-email" name="c-email" placeholder="What's Your Contact Email"><br />
-                <label for="c-gender">How Do We Address You:</label><br />
-                <div class="c-gender">
-                    <input type="checkbox" id="c-male" name="c-gender" value="male" onclick="onlyOne(this)">
-                    <label for="male">Mr.</label>
-                    <input type="checkbox" id="c-female" name="c-gender" value="female" onclick="onlyOne(this)">
-                    <label for="female">Ms.</label>
-                    <input type="checkbox" id="c-none" name="c-gender" value="none" onclick="onlyOne(this)">
-                    <label for="none">None</label><br />
+                <div id="myForm-lg-left">
+                    <input type="text" id="c-name" name="c-name" placeholder="Enter Your Full Name"><br />
+                    <input type="text" id="c-email" name="c-email" placeholder="What's Your Contact Email"><br />
+                    <label for="c-gender">How Do We Address You:</label><br />
+                    <div class="c-gender">
+                        <input type="checkbox" id="c-male" name="c-gender" value="male" onclick="onlyOne(this)">
+                        <label for="male">Mr.</label>
+                        <input type="checkbox" id="c-female" name="c-gender" value="female" onclick="onlyOne(this)">
+                        <label for="female">Ms.</label>
+                        <input type="checkbox" id="c-none" name="c-gender" value="none" onclick="onlyOne(this)">
+                        <label for="none">None</label><br />
+                    </div>
                 </div>
-                <textarea id="c-textarea" name="c-textarea" rows="8" cols="35" placeholder="Kindly indicate what inquiries you have that we can address..."></textarea><br />
-                <input type="submit" value="Submit" c onclick="acknowledgement()"><br />
+                <div id="myForm-lg-right">
+                    <textarea id="c-textarea" name="c-textarea" placeholder="Kindly indicate what inquiries you have that we can address..."></textarea><br />
+                </div>
+                <div id="myForm-lg-bottom">
+                    <input type="submit" value="Submit" c onclick="acknowledgement()"><br />
+                </div>
             </form>
         </div>
 
