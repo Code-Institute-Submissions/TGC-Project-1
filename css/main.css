@@ -277,6 +277,7 @@ label #cancel {
     transition: 0.5s;
     background-color: rgba(90, 43, 58, 1);
     box-shadow: 5px 10px 8px black;
+    border-radius: 6px;
 }
 
 .cta-1-btn a:hover {
@@ -725,20 +726,23 @@ label #cancel {
     height: 15%;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 3rem;
-    margin: 1rem 0 1rem 0;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
 }
 
 #social-facebook img,
 #social-whatsapp img,
 #social-email img {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     background-color: rgba(255, 225, 168, 1.0);
     border-radius: 12px;
     box-shadow: 5px 10px 8px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #social-facebook img:hover,
@@ -901,18 +905,6 @@ input[type=submit]:hover {
 /* Media Queries */
 
 
-/* Small devices (landscape phones, 576px and up) */
-
-@media only screen and (min-width: 576px) {
-    .main-title h1 {
-        padding: 1rem 2rem;
-    }
-    .sub-title {
-        align-items: flex-end;
-    }
-}
-
-
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 
 @media only screen and (min-width: 768px) {
@@ -951,15 +943,15 @@ input[type=submit]:hover {
     }
     /* End of Side Navbar CSS */
     .main-title h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
         padding: 2rem 4rem;
     }
-    .sub-title {
-        align-items: flex-start;
-    }
     .sub-title h2 {
-        font-size: 2.5rem;
+        font-size: 2.5em;
         padding: 3rem 2rem;
+    }
+    .cta-1-btn a {
+        font-size: 2rem;
     }
     .page1-btm {
         margin: 6rem 0;
@@ -1001,7 +993,7 @@ input[type=submit]:hover {
         font-size: 1.5rem;
         height: 15rem;
         width: 15rem;
-        line-height: 2.5rem;
+        line-height: 2rem;
         letter-spacing: 0.2rem;
     }
     .panel {
@@ -1045,12 +1037,14 @@ input[type=submit]:hover {
         align-items: center;
     }
     .trainer-info-btm ul li {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         letter-spacing: 0.2rem;
     }
-    .page4-trainer-social {
-        width: 60%;
-        margin: 8% 0 20% 12%;
+    #social-facebook img,
+    #social-whatsapp img,
+    #social-email img {
+        height: 4rem;
+        width: 4rem;
     }
     #contact-form-title {
         height: 20%;
@@ -1062,18 +1056,24 @@ input[type=submit]:hover {
         padding: 2rem 2rem;
         letter-spacing: 0.2rem;
     }
+    #myForm-lg-left,
+    #myForm-lg-right,
+    #myForm-lg-bottom {
+        width: 100%;
+    }
     #c-name,
     #c-email {
         font-size: 1.5rem;
-        width: 25rem;
-        margin: 0 0 2rem 0;
+        width: 80%;
+        margin-bottom: 2rem;
     }
     label[for=c-gender] {
+        width: 80%;
         font-size: 1.2rem;
-        margin-left: 5rem;
+        text-align: center;
     }
     .c-gender {
-        width: 100%;
+        width: 80%;
     }
     input[type=checkbox] {
         width: 3rem;
@@ -1090,17 +1090,11 @@ input[type=submit]:hover {
         width: 30rem;
         font-size: 1.5rem;
     }
-    #myForm-lg-bottom {
-        width: 100%;
-        height: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     input[type=submit] {
-        font-size: 2rem;
-        width: 15rem;
-        height: 5rem;
+        font-size: 1.5rem;
+        width: 12rem;
+        height: 4rem;
+        margin-top: 2.5rem;
     }
 }
 
@@ -1114,7 +1108,7 @@ input[type=submit]:hover {
     #bg-video {
         top: 0;
         left: 0;
-        transform: none;
+        transform: translateX(-35%);
     }
     .main-title h1 {
         width: 80%;
@@ -1316,11 +1310,11 @@ input[type=submit]:hover {
         background: linear-gradient(360deg, transparent, rgba(250, 125, 100, 1.0));
     }
     .accordion {
-        width: 20rem;
+        width: 18rem;
         height: 15rem;
         font-size: 1.5rem;
-        line-height: 2.5rem;
-        margin: 20rem 0 0 3rem;
+        line-height: 2rem;
+        margin: 15rem 0 0 3rem;
     }
     .panel {
         font-size: 1.3rem;
@@ -1340,7 +1334,7 @@ input[type=submit]:hover {
     .page4-portrait-wrapper {
         height: 70%;
         width: 20%;
-        margin: 2rem 0 5rem 20rem;
+        margin: 2rem 0 5rem 15rem;
     }
     #page4-name h2 {
         font-size: 1.5rem;
@@ -1353,7 +1347,6 @@ input[type=submit]:hover {
     .page4-trainer-info {
         width: 30%;
         height: 70%;
-        margin: 1rem 0;
     }
     .trainer-info-top {
         height: 30%;
@@ -1383,10 +1376,8 @@ input[type=submit]:hover {
     }
     .page4-trainer-social {
         width: 5%;
-        height: 40%;
+        height: 50%;
         flex-direction: column;
-        margin: 2rem 3rem 0 0;
-        padding: 0;
     }
     #contact-form-title h2 {
         font-size: 3.5rem;
@@ -1417,14 +1408,13 @@ input[type=submit]:hover {
     #c-email {
         width: 80%;
         height: 10%;
-        margin: 0 0 3rem 2rem;
+        margin: 0 0 2rem 1rem;
         font-size: 1.5rem;
     }
     label[for=c-gender] {
         width: 80%;
         height: auto;
-        margin: 0 0 0 4rem;
-        padding: 2rem 0 0 0;
+        padding: 1rem 0;
         font-size: 1.3rem;
     }
     .c-gender {
@@ -1445,9 +1435,9 @@ input[type=submit]:hover {
     #c-textarea {
         resize: none;
         font-size: 1.25rem;
-        height: 21rem;
-        width: 30rem;
-        margin: 0;
+        height: 85%;
+        width: 100%;
+        margin-bottom: 4rem;
     }
     input[type=submit] {
         font-size: 1.5rem;
