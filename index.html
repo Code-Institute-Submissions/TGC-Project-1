@@ -3,7 +3,7 @@
 
 <head>
     <title>Functional Integration Center</title>
-    <link rel="icon" href="assets/images/favicon-32x32.png">
+    <link rel="icon" href="assets/imgs/favicon-32x32.png">
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,21 +17,21 @@
 <body>
     <input type="checkbox" id="check">
     <label for="check">
-        <img src="assets/images/chevron-right-solid.svg" alt="menu-open" id="btn"></i>
-        <img src="assets/images/times-solid.svg" alt="menu-close" id="cancel"></i>
+        <img src="assets/images/chevron-right-solid.svg" alt="menu-open" id="btn">
+        <img src="assets/images/times-solid.svg" alt="menu-close" id="cancel">
     </label>
     <nav class="sidebar">
         <header>Menu</header>
         <a href="#homepage" class="active">
-            <image src="assets/images/home-solid.svg" alt="homepage"></image><span>Home</span></a>
+            <img src="assets/images/home-solid.svg" alt="homepage"><span>Home</span></a>
         <a href="#about">
-            <image src="assets/images/info-solid.svg" alt="about-us"></image><span>About</span></a>
+            <img src="assets/images/info-solid.svg" alt="about-us"><span>About</span></a>
         <a href="#courses">
-            <image src="assets/images/calendar-alt-solid.svg" alt="courses"></image><span>Courses</span></a>
+            <img src="assets/images/calendar-alt-solid.svg" alt="courses"><span>Courses</span></a>
         <a href="#trainers">
-            <image src="assets/images/users-solid.svg" alt="trainers"></image><span>Trainers</span></a>
+            <img src="assets/images/users-solid.svg" alt="trainers"><span>Trainers</span></a>
         <a href="#contact">
-            <image src="assets/images/address-book-solid.svg" alt="contact-us"></image><span>Contact</span></a>
+            <img src="assets/images/address-book-solid.svg" alt="contact-us"><span>Contact</span></a>
     </nav>
     <!-- End of Side Navbar -->
 
@@ -98,7 +98,7 @@
         </div>
         <div class="page3-lg-wrapper">
             <div class="page3-top">
-                <button class="accordion" id="acc-atm"><h3>Awareness Through Movement<br />ATM</h3></button>
+                <button class="accordion" id="acc-atm">Awareness Through Movement<br />ATM</button>
                 <div class="panel" id="panel-atm">
                     <p>Awareness Through Movement is a group class for exploration of the connection between brain and behaviour.</p>
                     <h3>=== For Whom ===</h3>
@@ -107,7 +107,7 @@
             </div>
             <div class="page3-divider"></div>
             <div class="page3-btm">
-                <button class="accordion" id="acc-fi"><h3>Functional Integration<br />FI</h3></button>
+                <button class="accordion" id="acc-fi">Functional Integration<br />FI</button>
                 <div class="panel" id="panel-fi">
                     <p>Functional Integration (FI) is a one on one lesson delivered by a certified practitioner.</p>
                     <h3>=== For Whom ===</h3>
@@ -151,15 +151,15 @@
         </div>
         <div class="page4-trainer-social">
             <div id="social-facebook">
-                <a href="https://www.facebook.com/sachien.khaw" target="_blank"><img src="assets/images/facebook-brands.svg"></img>
+                <a href="https://www.facebook.com/sachien.khaw" target="_blank"><img src="assets/images/facebook-brands.svg" alt="facebook logo">
                 </a>
             </div>
             <div id="social-whatsapp">
-                <a href="tel:+65-96820852" target="_blank"><img src="assets/images/whatsapp-brands.svg"></img>
+                <a href="tel:+65-96820852" target="_blank"><img src="assets/images/whatsapp-brands.svg" alt="whatsapp logo">
                 </a>
             </div>
             <div id="social-email">
-                <a href="mailto:sachienkhaw@gmail.com" target="_blank"><img src="assets/images/envelope-open-text-solid.svg"></img>
+                <a href="mailto:sachienkhaw@gmail.com" target="_blank"><img src="assets/images/envelope-open-text-solid.svg" alt="email logo">
                 </a>
             </div>
 
@@ -173,23 +173,23 @@
             </div>
             <form id="myForm" onsubmit="return validateForm()" method="post">
                 <div id="myForm-lg-left">
-                    <input type="text" id="c-name" name="c-name" placeholder="Enter Your Full Name"><br />
-                    <input type="text" id="c-email" name="c-email" placeholder="What's Your Contact Email"><br />
-                    <label for="c-gender">How Do We Address You:</label><br />
+                    <input type="text" id="c-name" name="c-name" placeholder="Enter Your Full Name">
+                    <input type="text" id="c-email" name="c-email" placeholder="What's Your Contact Email">
+                    <label for="c-gender">How Do We Address You:</label>
                     <div class="c-gender">
                         <input type="checkbox" id="c-male" name="c-gender" value="male" onclick="onlyOne(this)">
-                        <label for="male">Mr.</label>
+                        <label for="male" id="male">Mr.</label>
                         <input type="checkbox" id="c-female" name="c-gender" value="female" onclick="onlyOne(this)">
-                        <label for="female">Ms.</label>
+                        <label for="female" id="female">Ms.</label>
                         <input type="checkbox" id="c-none" name="c-gender" value="none" onclick="onlyOne(this)">
-                        <label for="none">None</label><br />
+                        <label for="none" id="none">None</label>
                     </div>
                 </div>
                 <div id="myForm-lg-right">
-                    <textarea id="c-textarea" name="c-textarea" placeholder="Kindly indicate what inquiries you have that we can address..."></textarea><br />
+                    <textarea id="c-textarea" name="c-textarea" placeholder="Kindly indicate what inquiries you have that we can address..."></textarea>
                 </div>
                 <div id="myForm-lg-bottom">
-                    <input type="submit" value="Submit" c onclick="acknowledgement()"><br />
+                    <input type="submit" value="Submit" onclick="acknowledgement()">
                 </div>
             </form>
         </div>
@@ -197,8 +197,8 @@
     </section>
 
 
-    <script src="js/main.js" type="text/javascript"></script>
-    <script src="js/sweetalert2.all.min.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
