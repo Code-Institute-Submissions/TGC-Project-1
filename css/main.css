@@ -1194,10 +1194,11 @@ input[type=submit]:hover {
         width: 80%;
         font-size: 5rem;
         padding: 2rem 0 0 0;
+        line-height: 5rem;
     }
     .sub-title h2 {
         font-size: 4rem;
-        padding: 0 0 2rem 0;
+        padding: 1rem 0;
     }
     .page1-textbox p {
         font-size: 2rem;
