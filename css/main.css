@@ -433,7 +433,7 @@ label #cancel {
     width: 100%;
     position: absolute;
     z-index: 1;
-    top: 15%;
+    top: 10%;
 }
 
 .page2-text h2 {
