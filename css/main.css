@@ -569,6 +569,7 @@ label #cancel {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    z-index: 1;
 }
 
 .accordion:after {
@@ -779,7 +780,7 @@ label #cancel {
 
 #contact-form-title h2 {
     font-family: "montserrat";
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.2rem;
     color: rgba(40, 44, 52, 1.0);
     font-weight: 900;
@@ -806,7 +807,7 @@ label #cancel {
     font-family: "mallanna";
     font-size: 1.2rem;
     padding: 1rem 0;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
     text-align: center;
 }
 
@@ -840,22 +841,22 @@ input[type=checkbox] {
 
 textarea {
     resize: none;
-    height: 8rem;
+    height: 6rem;
     width: 15rem;
     font-size: 1rem;
 }
 
 input[type=submit] {
     border-radius: 12px;
-    width: 12rem;
+    width: 10rem;
     height: 3rem;
-    margin: 0.75rem 0 0 0;
+    margin: 0.5rem 0 0 0;
     font-family: "montserrat";
     color: rgb(255, 225, 168);
     text-transform: uppercase;
     letter-spacing: 0.25rem;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     overflow: hidden;
     background-color: rgba(90, 43, 58, 1);
     box-shadow: 5px 10px 8px black;
