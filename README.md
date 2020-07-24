@@ -17,11 +17,8 @@ The concept chosen for this project is Functional Integration Center Website -- 
 The full website demo can be previewed here: [Functional Integration Center](https://collinwuy.github.io/TGC-Project-1/)
 
 Responsive demo can be previewed here: [Responsive Demo on Various Devices](http://ami.responsivedesign.is/?url=https://collinwuy.github.io/TGC-Project-1/)
-
+<br>
 ![Website Responsiveness Preview](/assets/images/ReponsiveView.png "Website Responsiveness Preview")
-
-
-
 
 ## UX ##
 
@@ -38,14 +35,16 @@ On larger devices, more fanciful hover animations and color-change is implemente
 The theme of the website is darker, earthy colors with contrasting bright orange and yellow to provide a inviting and theraputic association. 
 -- _More Info_ [Color Psychology](https://www.verywellmind.com/color-psychology-2795824) --
 
-The 100% viewport pages design are meant for focusing the user, to focus on a full screen as a page and not be distracted by half/cut-off pages; in which can either be scrolled through or brought to with the navbar.
+The 100% viewport pages design is meant to focus the user's attention on a full screen page and not be distracted by half/cut-off pages; in which can either be scrolled through or brought to with the navbar.
 
 ## Features ##
-- Full 100% Viewport per page to focus the user
+- Full 100% Viewport per page to focus the user's attention
   <br>
 - Single Website, All Pages Design for minimal loading of links or other pages 
   <br>
 - 100% Offline Website, All Fonts, Icons, Images, Video, JS/CSS Libraries are all downloaded
+  <br>
+- Custom CSS for scrollbars
   <br>
 - Left Side Navbar
   - Icons with Words on Hover for Quick Access
@@ -54,7 +53,7 @@ The 100% viewport pages design are meant for focusing the user, to focus on a fu
   <br>
 - Homepage  (_Page1_)
   - Video Background to See the      Therapist in Action
-  - Animated _Glowing_ Call to Action Button
+  - Animated _Glowing_  Call to Action Button
   - Quick Summary of Website and Service
   <br>
 - About (_Page2_)
@@ -63,7 +62,7 @@ The 100% viewport pages design are meant for focusing the user, to focus on a fu
   <br>
 - Course (_Page3_)
   - Full banner background images to showcase the specific service
-  - Accordion buttons that display information of the service, maximizing space and keeping the page clean
+  - Accordion buttons that display information of the service on click, maximizing space and keeping the page clean
   <br>
 - Trainer (_Page4_)
   - Profile Page of the Therapist
@@ -76,8 +75,8 @@ The 100% viewport pages design are meant for focusing the user, to focus on a fu
 ### Features Left to Implement ###
 
 - Form capture and push to email or database (Requires .php)
-
-- Photo Gallery of Activities with Testimonals
+- Photo Gallery of Activities with Testimonals and Blog
+- Converting to BootStrap 4, jQuery, Popper.js (all libraries have been downloaded and included, just not used) 
 
 ## Technologies Used ##
 
@@ -87,89 +86,154 @@ The 100% viewport pages design are meant for focusing the user, to focus on a fu
 * [CSS](https://www.w3schools.com/css/)
     - CSS is used for implementing styling to a webpage 
 
-* [Javascript](https://www.w3schools.com/js/)
-    - Javascript is the programming language of HTML and the Web.
+* [JavaScript](https://www.w3schools.com/js/)
+    - JavaScript is the programming language of HTML and the Web.
     - Used for accordion pop-up on click
     - Limiting checkbox selection on contact form
     - Verify and validated required fields, and input format in the contact form
     - Pop-up alerts (_SweetAlert2_) on form submission
+* [Git](https://git-scm.com/)/[Github](https://github.com/)
+    - For version control and commits to Github
+* [VSCode IDE](https://code.visualstudio.com/)
+    - Local IDE for coding HTML/CSS/JavaScript
+    - Extensions used:
+      - HTML CSS Support
+      - HTML CSS Snippets
+      - IntelliSense for CSS
+      - JS-CSS-HTML Formatter
+      - Live Server (Preview)
+      - BootStrap 4, FontAwesome 5 Free
+      - Markdown All in One
+      - Mardown Preview Enhanced
+      - Prettier - Code Formatter
 
 ## Testing ##
 
 #### Responsiveness ####
 The webpage was manual tested for responsiveness on physical iPhone 6S, Samsung S8+, Xiaomi Mi Max2, 1920 x 1080 laptop screen.
 
-Other devices that are not available physically were tested using this following [Responsiveness Tool](http://responsivetesttool.com/) webpage as well as [Am I Responsive Design](http://ami.responsivedesign.is/?url=https://collinwuy.github.io/TGC-Project-1/)
+Other devices that are not available physically were tested using this following [Responsiveness Tool](http://responsivetesttool.com/) webpage, [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly?id=07L3WeU_nndVYwaUTleP7w) as well as [Am I Responsive Design](http://ami.responsivedesign.is/?url=https://collinwuy.github.io/TGC-Project-1/)
+
+![Mobile-Friendly Test Results](assets/images/mobile-friendly-test.png "Mobile-Friendly Test Results")
 
 All platforms had to have correct CSS design, working animation, buttons, pop-up and elements placed in the correct position.
 
 #### Page Load Time ####
 
-The page load time is tested using [Pingdom Tool](https://tools.pingdom.com/) while being hosted by GitHub Pages. This is vitally important as the goal was to have a responsive, non-laggy webpage with no link-loading from page to page, achieving an __A__ rating of __91/100__ points also on America and European Servers.
+The page load time is tested using [Pingdom Tool](https://tools.pingdom.com/) while being hosted by GitHub Pages. This is vital and important as the goal was to have a responsive, non-laggy webpage with no link-loading from page to page, achieving an __A__ rating of __91/100__ points also on Asia, America and European Servers.
 
 ![Page Load Time](/assets/images/Pingdom%20Asia.png "Website Responsiveness Preview")
 
 #### Code Validation ####
 
-Code validation is achieve by using developer tools provided by [W3C Developer Tools](https://w3c.github.io/developers/tools/). The webpage code tested til no errors are found on their [Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcollinwuy.github.io%2FTGC-Project-1%2F),
-![Nu Html Validation] [Internationlization Checker](https://validator.w3.org/i18n-checker/check?uri=https%3A%2F%2Fcollinwuy.github.io%2FTGC-Project-1%2F#validate-by-uri+)
+Code validation is achieve by using developer tools provided by [W3C Developer Tools](https://w3c.github.io/developers/tools/). The webpage code tested til no errors are found on their [Nu Html Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcollinwuy.github.io%2FTGC-Project-1%2F), [Internationlization Validator](https://validator.w3.org/i18n-checker/check?uri=https%3A%2F%2Fcollinwuy.github.io%2FTGC-Project-1%2F#validate-by-uri+), [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcollinwuy.github.io%2FTGC-Project-1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en), [Link Validator](https://validator.w3.org/checklink?uri=https%3A%2F%2Fcollinwuy.github.io%2FTGC-Project-1%2F&summary=on&hide_type=all&depth=&check=Check).
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+![W3C Validator Results](assets/images/w3school-validated.png "W3C Validator Results")
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+#### Manual Testing ####
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+Other testing include:
+- Testing of button a tag links, ensuring they jump to the correct part of the page
+- Hover animation testing with laptop and mouse overs
+- Accordion testing, ensuring pop-up panel happens on click
+- Social button's linking to Call on mobile, new page for facebook and re-direct to email with email button
+- Contact form testing
+  - Error pop-up alert for not having required fields
+  - Email format is correct before able to submit
+  - Ensuring JavaScript is active, allowing only 1 checkbox to be selected at a time
+  - Proper Error Pop-up if form validation has an error
+  - Proper Success Pop-up if form submit and validation is successful
 
-Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+![SweetAlert2 Popups](assets/images/SweetAlert2PopUp.png "Submit Error & Success Pop-up Alerts")
 
-Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+#### Browser Testing ####
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+The site while being hosted by Github Pages is tested on a laptop of 1920x1080 resolution:
+- Brave
+- Google Chrome
+- Firefox
+- Microsoft Edge
 
-Features Left to Implement
-Another feature idea
-Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+It is also tested on a iPhone 6S for:
+- Safari 
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
-Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+#### Bugs ####
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+Currently as the mobile responsiveness is accomplished by purely CSS, different vertically of different device viewports causes shifting of the format of the webpage, or having the fonts becoming too small for that viewport. I think this can be resolve if the html is convertered into BootStrap for more unified resizing as compared to media queries.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+On certain browsers, like Safari, JavaScript may not function on old versions of Safari and Firefox Browsers have issue reading CSS for checkboxes. However based on [W3School Browser Statics](https://www.w3schools.com/browsers/) in 2020, 80%+ uses Chrome, small number of people uses other browsers.
 
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+## Deployment ##
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+This project uses Git for version control and hosts the repository for all commits. It is linked to my local VSCode IDE. The depolyed site is hosted by Github Pages where it can automatically updated on new commits.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+This project can be accessed via [CollinWuY's Github](https://github.com/CollinWuY/TGC-Project-1) where you can clone/download to your computer directly, or immedaitely view the code. 
 
-Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+All the needed assets, images, videos, fonts, icons, javascript, css are in their respective folders, the main site is named index.html, all of which are offline, only links to socials are online.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+#### Downloading Locally ####
 
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+All files can be easily download on the Github site:
+1.  At the top right, click on green button under __CODE__
+2.  Select last option: Download .zip
 
-Credits
-Content
-The text for section Y was copied from the Wikipedia article Z
-Media
-The photos used in this site were obtained from ...
-Acknowledgements
-I received inspiration for this project from X
+![Github Download ZIP](assets/images/githubsitedl.png "Download from Github")
+
+3.  Download the .zip file that can be opened with a ZIP unpacker or RAR unpacker 
+4.  Unzip the package
+5.  Double click the index.html
+    -   it should open on your preferred browser.
+
+
+#### Linking to Local IDE ####
+
+Cloning this repository can be achieve by using the link provided at the Github site:
+1. At the top right, click on green button under __CODE__
+2. Copy the link provided: `https://github.com/CollinWuY/TGC-Project-1.git`
+
+![Github Clone URL](assets/images/githubsiteclone.png "Clone URL from Github")
+
+3. In your preferred IDE, Run in terminal `git clone https://github.com/CollinWuY/TGC-Project-1.git`
+4. Repository will be cloned as a folder on your computer
+
+## Credits ##
+
+#### Media ####
+
+- Background Video and Therapist Images are all Personal Images
+<br>
+- Moshe Feldenkrais Image is taken from [Wikipedia-Moshe Feldenkrais](https://en.wikipedia.org/wiki/Mosh%C3%A9_Feldenkrais)
+
+#### Icons ####
+
+- All icons are downloaded as SVG from [Font Awesome](https://fontawesome.com/)
+<br>
+- Browser Tab Icon is Logo convertered using [Favicon.io](https://favicon.io/favicon-converter/)
+
+#### Code/Concept ####
+
+- Responsive Side Navbar is a modified version of [CodingNepal - Responsive Sidebar Menu using HTML & CSS](https://www.codingnepalweb.com/2020/04/responsive-sidebar-menu-html-css.html)  
+<br>
+- Call to Action button on Homepage is a modified version of [Online Tutorials - Neon Light Animation Effects on Hover | CSS Snake Border](https://www.youtube.com/watch?v=ex7jGbyFgpA)
+<br>
+- Page 3 - Accordion buttons are modified version of Accordion from [W3Schools.com](https://www.w3schools.com/howto/howto_js_accordion.asp)
+<br>
+- Color Palette is generated by [Coolors.co](https://coolors.co/ffffa8-fa7d64-6b2b3a-282c34)
+<br>
+- Pop-up alerts library is downloaded from [Sweet Alert 2](https://sweetalert2.github.io/)
+
+#### Fonts ####
+
+- Fonts are downloaded at [Google Fonts Mallanna](https://fonts.google.com/specimen/Mallanna?query=mallanna) | [Google Fonts Montserrat](https://fonts.google.com/specimen/Montserrat?query=montserra)
+
+#### Unused Libraries for Future Implement ####
+
+- [BootStrap 4.5 CSS and JS](https://getbootstrap.com/docs/4.5/getting-started/download/) 
+<br> 
+- [jQuery 3.5.1 JS](https://jquery.com/download/)
+<br>
+- [Popper.js.org](https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js)
+<br>
+<br>
+
+__THIS WEBSITE IS FOR EDUCATIONAL PURPOSE ONLY - ALL RIGHTS RETAIN BY COLLIN WU YUEWEI__
