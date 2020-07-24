@@ -40,6 +40,75 @@ The theme of the website is darker, earthy colors with contrasting bright orange
 
 The 100% viewport pages design are meant for focusing the user, to focus on a full screen as a page and not be distracted by half/cut-off pages; in which can either be scrolled through or brought to with the navbar.
 
+## Features ##
+- Full 100% Viewport per page to focus the user
+  <br>
+- Single Website, All Pages Design for minimal loading of links or other pages 
+  <br>
+- 100% Offline Website, All Fonts, Icons, Images, Video, JS/CSS Libraries are all downloaded
+  <br>
+- Left Side Navbar
+  - Icons with Words on Hover for Quick Access
+  - Collapsing to a Small Button on the Bottom Left on Mobile Devices
+  - Large Left Menu Navbar on Expand for easy thumb access
+  <br>
+- Homepage  (_Page1_)
+  - Video Background to See the      Therapist in Action
+  - Animated _Glowing_ Call to Action Button
+  - Quick Summary of Website and Service
+  <br>
+- About (_Page2_)
+  - Background Image of Information
+  - Overlay with text, condensed information for quick introduction of the basis of the service
+  <br>
+- Course (_Page3_)
+  - Full banner background images to showcase the specific service
+  - Accordion buttons that display information of the service, maximizing space and keeping the page clean
+  <br>
+- Trainer (_Page4_)
+  - Profile Page of the Therapist
+  - Quick Access social network/email/phone buttons 
+  <br>
+- Contact Form (_Page5)
+  - Simple clean form
+  - Pop-up alert feedback on successful or unsuccessful submission
+
+### Features Left to Implement ###
+
+- Form capture and push to email or database (Requires .php)
+
+- Photo Gallery of Activities with Testimonals
+
+## Technologies Used ##
+
+* [HTML](https://www.w3schools.com/html/)
+    - HTML is universal base language for creating webpages compatible with majority browsers
+
+* [CSS](https://www.w3schools.com/css/)
+    - CSS is used for implementing styling to a webpage 
+
+* [Javascript](https://www.w3schools.com/js/)
+    - Javascript is the programming language of HTML and the Web.
+    - Used for accordion pop-up on click
+    - Limiting checkbox selection on contact form
+    - Verify and validated required fields, and input format in the contact form
+    - Pop-up alerts (_SweetAlert2_) on form submission
+
+## Testing ##
+
+#### Responsiveness ####
+The webpage was manual tested for responsiveness on physical iPhone 6S, Samsung S8+, Xiaomi Mi Max2, 1920 x 1080 laptop screen.
+
+Other devices that are not available physically were tested using this following [Responsiveness Tool](http://responsivetesttool.com/) webpage as well as [Am I Responsive Design](http://ami.responsivedesign.is/?url=https://collinwuy.github.io/TGC-Project-1/)
+
+All platforms had to have correct CSS design, working animation, buttons, pop-up and elements placed in the correct position.
+
+#### Page Load Time ####
+
+The page load time is tested using [Pingdom Tool](https://tools.pingdom.com/) while being hosted by GitHub Pages. This is vitally important as the goal was to have a responsive, non-laggy webpage with no link-loading from page to page, achieving an __A__ rating of __91/100__ points.
+
+![Page Load Time](/assets/images/Pingdom%20Asia.png "Website Responsiveness Preview")
+
 
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.

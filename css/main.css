@@ -92,7 +92,6 @@ body {
     width: 30px;
     margin-right: 10px;
     margin-top: 15px;
-    fill: white;
 }
 
 .sidebar a {
@@ -130,7 +129,6 @@ label #btn,
 label #cancel {
     position: fixed;
     cursor: pointer;
-    fill: white;
     border-radius: 12px;
     border: 1px solid #262626;
     font-size: 29px;
@@ -422,7 +420,7 @@ label #cancel {
     padding: 0;
     margin: 0;
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), url(../assets/images/220px-Moshe_Feldenkrais.png);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     transform: translate(5%, 5%);
@@ -508,7 +506,7 @@ label #cancel {
     justify-content: center;
     align-items: center;
     background-image: url(../assets/images/group2.jpeg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -529,7 +527,7 @@ label #cancel {
     justify-content: center;
     align-items: center;
     background-image: url(../assets/images/housecall1-fixed.jpeg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -641,7 +639,7 @@ label #cancel {
     height: 100%;
     width: 100%;
     background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../assets/images/trainer.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 80% 50%;
     display: flex;
