@@ -1,24 +1,30 @@
 # Functional Integration Center | Feldenkrais Method #
 
 ### TGC - User Centric Frontend Development Milestone Project 1 ###
-By: Collin Wu Yuewei
+By: **Collin Wu Yuewei** -- *Code Institude Batch 8* -- 
 
-A user-centric portfolio website to promote a movement therapist's skills, knowledge and services. The website has strategic information highlighted to allow the user to make an informed decision to engage the therapist. Using colourful and striking interactive buttons and pop-ups that provide feedback to the user as well as full viewport 5-page single website modern design to remove link loading time and faster response time.
+A user-centric portfolio website to promote a movement therapist's skills, knowledge and services. The website has strategic information highlighted to allow the user to make an informed decision to engage the therapist. Using colourful and striking interactive buttons and pop-ups that provide feedback to the user as well as full viewport 5-page single website modern design to remove link loading time resulting in faster response time.
 
 ![Website Preview Image](/assets/images/WebsitePreview1.png "Functional Integration Center Website Homepage")
 
 ## Aim ##
 The goal of the project is to build a static front-end site to present useful information to users, using techonology and languages taught in the Code Institute Fullstack Web Developer Program; at Project 1, namely HTML and CSS.
 
-The concept chosen for this project is Functional Integration Center Website *[Feldenkrais-Asia](http://feldenkrais-asia.com/)* which is a old wordpress portfilo website that is not mobile responsive (created by me) and upgrade it to a modern mobile responsive website to present information of the movement therapist with information on the techniques and services provided that can direct potential customers. 
+The concept chosen for this project is Functional Integration Center Website -- *[Feldenkrais-Asia](http://feldenkrais-asia.com/)* -- which is a old wordpress portfilo website that is not mobile responsive (created by me), and upgrade it to a modern mobile responsive website to present information of the movement therapist with information on the techniques and services provided which then can direct potential customers to the therapist. 
 
 ## Demo ##
 
-The full website demo can be previewed: [Functional Integration Center](https://collinwuy.github.io/TGC-Project-1/)
+The full website demo can be previewed here: [Functional Integration Center](https://collinwuy.github.io/TGC-Project-1/)
+
+Responsive demo can be previewed here: [Responsive Demo on Various Devices](http://ami.responsivedesign.is/?url=https://collinwuy.github.io/TGC-Project-1/)
+
+![Website Responsiveness Preview](/assets/images/ReponsiveView.png "Website Responsiveness Preview")
 
 
 
-UX
+
+## UX ##
+
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
