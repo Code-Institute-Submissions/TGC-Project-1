@@ -105,11 +105,14 @@ All platforms had to have correct CSS design, working animation, buttons, pop-up
 
 #### Page Load Time ####
 
-The page load time is tested using [Pingdom Tool](https://tools.pingdom.com/) while being hosted by GitHub Pages. This is vitally important as the goal was to have a responsive, non-laggy webpage with no link-loading from page to page, achieving an __A__ rating of __91/100__ points.
+The page load time is tested using [Pingdom Tool](https://tools.pingdom.com/) while being hosted by GitHub Pages. This is vitally important as the goal was to have a responsive, non-laggy webpage with no link-loading from page to page, achieving an __A__ rating of __91/100__ points also on America and European Servers.
 
 ![Page Load Time](/assets/images/Pingdom%20Asia.png "Website Responsiveness Preview")
 
+#### Code Validation ####
 
+Code validation is achieve by using developer tools provided by [W3C Developer Tools](https://w3c.github.io/developers/tools/). The webpage code tested til no errors are found on their [Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcollinwuy.github.io%2FTGC-Project-1%2F),
+![Nu Html Validation] [Internationlization Checker](https://validator.w3.org/i18n-checker/check?uri=https%3A%2F%2Fcollinwuy.github.io%2FTGC-Project-1%2F#validate-by-uri+)
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
