@@ -1108,7 +1108,7 @@ input[type=submit]:hover {
     #bg-video {
         top: 0;
         left: 0;
-        transform: translateX(-35%);
+        transform: none;
     }
     .main-title h1 {
         width: 80%;

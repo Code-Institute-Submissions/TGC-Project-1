@@ -25,6 +25,23 @@ Responsive demo can be previewed here: [Responsive Demo on Various Devices](http
 
 ## UX ##
 
+The target audience for this website are for people whom are of the working class and older that are in search of pain-relief or mobility-aid as well as atheletes looking to improve their flexibility and performance.
+
+This project was a mobile first and a single hand operation design in mind. It has to fill the screen and have sufficiently large fonts for pleasant viewing.
+
+The navigation bar is a large sidebar that expands from the left with a collapse button to the bottom left, so that it is easily access via the thumb of the user.
+
+All buttons are purposefully place nearer to the lower left bottom of each page for easy thumb access. Large call to action buttons have color change feedback on press; to quickly gain access to pop-ups with information or relocation to another page down the website.
+
+On larger devices, more fanciful hover animations and color-change is implemented for better user feedback. Most button are now centered for symmmetry. 
+
+The theme of the website is darker, earthy colors with contrasting bright orange and yellow to provide a inviting and theraputic association. 
+-- _More Info_ [Color Psychology](https://www.verywellmind.com/color-psychology-2795824) --
+
+The 100% viewport pages design are meant for focusing the user, to focus on a full screen as a page and not be distracted by half/cut-off pages; in which can either be scrolled through or brought to with the navbar.
+
+
+
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
