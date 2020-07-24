@@ -823,20 +823,13 @@ label #cancel {
     text-align: center;
 }
 
-label[for=c-gender] {
-    font-size: 0.8rem;
+#myForm-lg-left p {
+    font-size: 1rem;
     font-weight: 900;
     width: 15rem;
     height: 10%;
     margin: 0.5rem 0 0 1.75rem;
     font-family: "montserrat";
-}
-
-label[for=c-male],
-label[for=c-female],
-label[for=c-none] {
-    font-family: "montserrat";
-    font-size: 1rem;
 }
 
 #c-gender {
@@ -845,6 +838,13 @@ label[for=c-none] {
     display: flex;
     justify-content: space-evenly;
     margin: 0.5rem 0;
+}
+
+label[for=c-male],
+label[for=c-female],
+label[for=c-none] {
+    font-family: "montserrat";
+    font-size: 1rem;
 }
 
 input[type=checkbox] {
@@ -1067,7 +1067,7 @@ input[type=submit]:hover {
         width: 80%;
         margin-bottom: 2rem;
     }
-    label[for=c-gender] {
+    #myForm-lg-left p {
         width: 80%;
         font-size: 1.2rem;
         text-align: center;
@@ -1411,7 +1411,7 @@ input[type=submit]:hover {
         margin: 0 0 2rem 1rem;
         font-size: 1.5rem;
     }
-    label[for=c-gender] {
+    #myForm-lg-left p {
         width: 80%;
         height: auto;
         padding: 1rem 0;
