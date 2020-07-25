@@ -84,7 +84,7 @@ body {
     user-select: none;
     font-family: "montserrat", serif;
     font-weight: 900;
-    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px slategrey;
 }
 
 .sidebar img {
@@ -108,7 +108,7 @@ body {
     border-left: 5px solid transparent;
     font-family: 'mallanna', sans-serif;
     transition: all .5s ease;
-    /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey; */
+    /* text-shadow: 1px 1px 1px black, 1px 2px 1px slategrey; */
 }
 
 .sidebar a:hover {
@@ -222,7 +222,7 @@ label #cancel {
     color: rgba(255, 225, 168, 1.0);
     font-size: 2rem;
     font-weight: 900;
-    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1.0), 2px 2px 2px rgba(40, 44, 52, 1.0), 2px 3px 2px grey;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1.0), 2px 2px 2px rgba(40, 44, 52, 1.0), 2px 3px 2px slategrey;
     padding: 2rem 2rem 1rem 2rem;
     font-family: "monsterrat", serif;
     line-height: 1.25;
@@ -493,7 +493,7 @@ label #cancel {
     letter-spacing: 0.2rem;
     padding: 1rem 2rem;
     text-align: center;
-    text-shadow: 1px 1px 1px black, 2px 2px 2px rgba(40, 44, 52, 1.0), 2px 2px 3px grey;
+    text-shadow: 1px 1px 1px black, 2px 2px 2px rgba(40, 44, 52, 1.0), 2px 2px 3px slategrey;
     border-bottom: 8px groove rgba(250, 125, 100, 1.0);
 }
 
@@ -553,9 +553,10 @@ label #cancel {
     outline: none;
     transition: 0.4s;
     border: 2px solid black;
-    /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey; */
+    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1.0), 2px 2px 2px slategray;
     margin: 0rem 0.5rem;
     position: relative;
+    box-shadow: 5px 10px 8px black;
 }
 
 .accordion:active,
@@ -583,7 +584,7 @@ label #cancel {
     color: rgba(250, 125, 100, 1.0);
     margin-left: 5px;
     position: absolute;
-    top: 0;
+    top: 5%;
     right: 0;
 }
 
@@ -627,7 +628,7 @@ label #cancel {
     letter-spacing: 0.5rem;
     padding: 1rem 2rem;
     text-align: center;
-    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1.0), 2px 2px 2px grey;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1.0), 2px 2px 2px slategrey;
     border-bottom: 8px groove rgba(40, 44, 52, 1.0);
     letter-spacing: 0.2rem;
 }
@@ -794,7 +795,7 @@ label #cancel {
     color: rgba(40, 44, 52, 1.0);
     font-weight: 900;
     text-align: center;
-    text-shadow: 1px 1px 1px black, 2px 2px 2px rgba(40, 44, 52, 1.0), 2px 2px 2px grey;
+    text-shadow: 1px 1px 1px black, 2px 2px 2px rgba(40, 44, 52, 1.0), 2px 2px 2px slategrey;
 }
 
 #myForm {
