@@ -742,7 +742,7 @@ label #cancel {
 #social-email img {
     height: 3rem;
     width: 3rem;
-    background-color: rgba(255, 225, 168, 1.0);
+    background-color: rgba(40, 44, 52, 1.0);
     border-radius: 12px;
     box-shadow: 5px 10px 8px black;
     display: flex;
