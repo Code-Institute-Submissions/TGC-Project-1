@@ -68,7 +68,7 @@ The 100% viewport pages design is meant to focus the user's attention on a full 
   - Profile Page of the Therapist
   - Quick Access social network/email/phone buttons 
   <br>
-- Contact Form (_Page5)
+- Contact Form (_Page5_)
   - Simple clean form
   - Pop-up alert feedback on successful or unsuccessful submission
 
