@@ -18,6 +18,7 @@ The full website demo can be previewed here: [Functional Integration Center](htt
 
 Responsive demo can be previewed here: [Responsive Demo on Various Devices](http://ami.responsivedesign.is/?url=https://collinwuy.github.io/TGC-Project-1/)
 <br>
+<br>
 ![Website Responsiveness Preview](/assets/images/ReponsiveView.png "Website Responsiveness Preview")
 
 ## UX ##
