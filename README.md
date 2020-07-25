@@ -1,7 +1,7 @@
 # Functional Integration Center | Feldenkrais Method #
 
 ### TGC - User Centric Frontend Development Milestone Project 1 ###
-By: **Collin Wu Yuewei** -- *Code Institude Batch 8* -- 
+By: **Collin Wu Yuewei** -- *Code Institute Batch 8* -- 
 
 A user-centric portfolio website to promote a movement therapist's skills, knowledge and services. The website has strategic information highlighted to allow the user to make an informed decision to engage the therapist. Using colourful and striking interactive buttons and pop-ups that provide feedback to the user as well as full viewport 5-page single website modern design to remove link loading time resulting in faster response time.
 
