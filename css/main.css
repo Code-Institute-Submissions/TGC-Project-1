@@ -578,7 +578,7 @@ label #cancel {
 
 .accordion:after {
     content: '\2b9e';
-    /* Unicode character for "plus" sign (+) */
+    /* Unicode character for "right arrow" sign (>) */
     font-size: 2rem;
     color: rgba(250, 125, 100, 1.0);
     margin-left: 5px;
@@ -590,7 +590,7 @@ label #cancel {
 .accordion.active:after {
     content: "\2b9c";
     color: rgba(255, 225, 168, 1.0);
-    /* Unicode character for "minus" sign (-) */
+    /* Unicode character for "left arrow" sign (<) */
 }
 
 
