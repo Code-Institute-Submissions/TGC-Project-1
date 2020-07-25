@@ -163,8 +163,6 @@ Currently as the mobile responsiveness is accomplished by purely CSS, different 
 
 On certain browsers, like Safari, JavaScript may not function on old versions of Safari and Firefox Browsers have issue reading CSS for checkboxes. However based on [W3School Browser Statics](https://www.w3schools.com/browsers/) in 2020, 80%+ uses Chrome, small number of people uses other browsers.
 
-Unicode do not seem to work on android mobiles. Probably find an alternative to the icon issue.
-
 ## Deployment ##
 
 This project uses Git for version control and hosts the repository for all commits. It is linked to my local VSCode IDE. The depolyed site is hosted by Github Pages where it can automatically updated on new commits.
