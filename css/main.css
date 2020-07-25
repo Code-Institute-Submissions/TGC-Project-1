@@ -578,20 +578,18 @@ label #cancel {
 }
 
 .accordion:after {
-    content: '\2b9e';
-    /* Unicode character for "right arrow" sign (>) */
-    font-size: 2rem;
-    color: rgba(250, 125, 100, 1.0);
-    margin-left: 5px;
+    width: 10%;
+    height: 10%;
+    content: url("../assets/images/chevron-right-solid.svg");
     position: absolute;
     top: 5%;
     right: 0;
 }
 
 .accordion.active:after {
-    content: "\2b9c";
-    color: rgba(255, 225, 168, 1.0);
-    /* Unicode character for "left arrow" sign (<) */
+    width: 10%;
+    height: 10%;
+    content: url("../assets/images/chevron-left-solid.svg");
 }
 
 
