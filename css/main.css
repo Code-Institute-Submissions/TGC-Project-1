@@ -27,7 +27,7 @@
 }
 
 html {
-    font-family: "mallanna";
+    font-family: "mallanna", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -82,7 +82,7 @@ body {
     text-align: center;
     background: rgba(84, 35, 49, 1);
     user-select: none;
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
     font-weight: 900;
     text-shadow: 1px 1px 1px black, 1px 2px 1px black, 2px 2px 2px black, 3px 3px 3px black, 4px 4px 4px grey;
 }
@@ -106,7 +106,7 @@ body {
     border-bottom: 2px solid black;
     border-top: 2px solid rgba(255, 255, 255, .3);
     border-left: 5px solid transparent;
-    font-family: 'Mallanna', sans-serif;
+    font-family: 'mallanna', sans-serif;
     transition: all .5s ease;
     /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey; */
 }
@@ -224,7 +224,7 @@ label #cancel {
     font-weight: 900;
     text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1.0), 2px 2px 2px rgba(40, 44, 52, 1.0), 2px 3px 2px grey;
     padding: 2rem 2rem 1rem 2rem;
-    font-family: "monsterrat";
+    font-family: "monsterrat", serif;
     line-height: 1.25;
 }
 
@@ -244,7 +244,7 @@ label #cancel {
 .sub-title h2 {
     color: rgba(250, 125, 100, 1.0);
     font-size: 1.25rem;
-    font-family: "mallanna";
+    font-family: "mallanna", sans-serif;
     letter-spacing: 0.2rem;
     padding: 3rem 2rem;
     text-shadow: 1px 1px 1px black, 1px 2px 1px rgba(40, 44, 52, 1.0), 2px 2px 2px rgba(40, 44, 52, 1.0);
@@ -259,7 +259,7 @@ label #cancel {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
 }
 
 .cta-1-btn a {
@@ -380,7 +380,7 @@ label #cancel {
 
 .page1-textbox p {
     color: rgba(255, 225, 168, 1.0);
-    font-family: "mallanna";
+    font-family: "mallanna", sans-serif;
     font-size: 1rem;
     text-align: left;
 }
@@ -440,7 +440,7 @@ label #cancel {
 .page2-text h2 {
     background-color: rgba(255, 225, 168, 0.8);
     color: rgba(40, 44, 52, 1.0);
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
     letter-spacing: 0.25rem;
     font-size: 1.2rem;
     /* margin-top: 10rem; */
@@ -455,7 +455,7 @@ label #cancel {
 .page2-text p {
     background-color: rgba(255, 225, 168, 0.8);
     color: rgba(40, 44, 52, 1.0);
-    font-family: "mallanna";
+    font-family: "mallanna", sans-serif;
     letter-spacing: 0.1rem;
     font-size: 0.8rem;
     padding: 1rem 2rem;
@@ -486,7 +486,7 @@ label #cancel {
 }
 
 .page3-title h2 {
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
     font-size: 2rem;
     font-weight: 900;
     color: rgba(250, 125, 100, 1.0);
@@ -540,7 +540,7 @@ label #cancel {
 .accordion {
     background-color: rgba(84, 35, 49, 1);
     color: rgba(255, 225, 168, 1.0);
-    font-family: "monserrat";
+    font-family: "monserrat", serif;
     font-size: 1rem;
     font-weight: 900;
     line-height: 1.5rem;
@@ -555,6 +555,7 @@ label #cancel {
     border: 2px solid black;
     /* text-shadow: 1px 1px 1px black, 1px 2px 1px grey, 2px 2px 2px grey; */
     margin: 0rem 0.5rem;
+    position: relative;
 }
 
 .accordion:active,
@@ -567,7 +568,7 @@ label #cancel {
     padding: 0 1rem;
     background-color: rgba(255, 225, 168, 1.0);
     color: rgba(40, 44, 52, 1.0);
-    font-family: "mallanna";
+    font-family: "mallanna", sans-serif;
     font-size: 0.9rem;
     max-height: 0;
     overflow: hidden;
@@ -580,8 +581,10 @@ label #cancel {
     /* Unicode character for "plus" sign (+) */
     font-size: 2rem;
     color: rgba(250, 125, 100, 1.0);
-    float: right;
     margin-left: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .accordion.active:after {
@@ -617,7 +620,7 @@ label #cancel {
 }
 
 .page4-title h2 {
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
     font-size: 2rem;
     font-weight: 900;
     color: rgba(255, 225, 168, 1.0);
@@ -661,7 +664,7 @@ label #cancel {
 }
 
 #page4-name h2 {
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
     font-size: 0.8rem;
     color: rgba(250, 125, 100, 1.0);
     text-shadow: 1px 1px 1px black, 1px 2px 2px rgba(40, 44, 52, 1.0);
@@ -669,7 +672,7 @@ label #cancel {
 }
 
 #page4-name h3 {
-    font-family: "mallanna";
+    font-family: "mallanna", sans-serif;
     font-size: 0.8rem;
     color: rgba(255, 225, 168, 1.0);
     text-shadow: 1px 1px 1px black, 1px 2px 2px rgba(40, 44, 52, 1.0);
@@ -701,7 +704,7 @@ label #cancel {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
     line-height: 1.5rem;
 }
 
@@ -719,7 +722,7 @@ label #cancel {
 }
 
 .trainer-info-btm ul li {
-    font-family: "mallanna";
+    font-family: "mallanna", sans-serif;
     font-size: 0.8rem;
 }
 
@@ -785,7 +788,7 @@ label #cancel {
 }
 
 #contact-form-title h2 {
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     color: rgba(40, 44, 52, 1.0);
@@ -816,7 +819,7 @@ label #cancel {
     border-radius: 12px;
     width: 80%;
     height: 10%;
-    font-family: "mallanna";
+    font-family: "mallanna", sans-serif;
     font-size: 1rem;
     padding: 0.75rem 0;
     margin: 0 0 0.5rem 0;
@@ -829,7 +832,7 @@ label #cancel {
     width: 15rem;
     height: 10%;
     margin: 0.5rem 0 0 1.75rem;
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
 }
 
 #c-gender {
@@ -843,7 +846,7 @@ label #cancel {
 label[for=c-male],
 label[for=c-female],
 label[for=c-none] {
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
     font-size: 1rem;
 }
 
@@ -881,7 +884,7 @@ input[type=submit] {
     width: 8rem;
     height: 2.5rem;
     margin: 5% 0 5% 0;
-    font-family: "montserrat";
+    font-family: "montserrat", serif;
     color: rgb(255, 225, 168);
     text-transform: uppercase;
     letter-spacing: 0.25rem;
@@ -1312,6 +1315,7 @@ input[type=submit]:hover {
         font-size: 1.5rem;
         line-height: 2rem;
         margin: 15rem 0 0 3rem;
+        position: relative;
     }
     .panel {
         font-size: 1.3rem;
@@ -1376,9 +1380,16 @@ input[type=submit]:hover {
         height: 50%;
         flex-direction: column;
     }
+    #contact-form-title {
+        height: 15%;
+        margin-bottom: 2rem;
+    }
     #contact-form-title h2 {
         font-size: 3.5rem;
-        padding: 2rem;
+        padding: 2rem 2rem 0 2rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
     }
     #myForm {
         width: 80%;
